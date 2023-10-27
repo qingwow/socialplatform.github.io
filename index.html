@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="refresh" >
+    <title>PH 企微热点追踪数据大屏</title>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/echarts.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/js.js"></script>
+    <!-- <script src="./js/69echarts.min.js"></script> -->
+    <!-- <script src="./js/jquery.js"></script> -->
+
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./fonts/icomoon.css">
+</head>
+
+<body>
+
+
+    <div class="viewport">
+        <!-- <div class="bt">xxx校友会数据大屏</div> -->
+        <div class="my-div">
+            <p class="LOGO"><img src="./images/logo2.png" alt=""></p>
+            <p class="biaoti">PH 企微热点追踪数据大屏</p>
+            <p class="tab" >
+                <a href="index.html">总体分析</a>
+                <a href="index2.html">用户画像</a>
+            </p>
+        </div>
+        <div class="columnSmall">
+            <!-- 左一 ------------------------------------------------------------------------------------------------------------------------------------------>
+            <div class="overview panel">
+                <div class="inner">
+                    <div class="item">
+                        <h4 style="margin-left: -8px;">29387</h4>
+                        <img src="./images/1.png" alt="">
+
+                    </div>
+                    <div class="item">
+                        <h4 style="margin-left: -8px;">21847</h4>
+                        <span>
+
+                            <img src="./images/3.png" alt="">
+                        </span>
+                    </div>
+                    <div class="item">
+                        <h4 style="margin-left: -2px;">7540</h4>
+                        <span>
+
+                            <img src="./images/2.png" alt="">
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 左2 ------------------------------------------------------------------------------------------------------------------------->
+            <!-- 图标 -->
+            <div class="jiqiren">
+                <img src="./images/机器人.gif" alt="">
+                <p>  &nbsp根据每个话题， 小胜将给出消费者洞察，对marketing的建议，以及相关关键词分析</p>
+                <!-- <div style="float: right ;">根据每个话题，小问将给出消费者洞察，对macketing的建议</div> -->
+                <!-- <img src="images/20231010-181749.jpg" alt=""> -->
+            </div>
+            <!--监控-->
+            <div class="monitor panel">
+                <div class="inner">
+                    <div class="tabs">
+                        <a href="javascript:;" data-index="0" class="active">消费者洞察</a>
+                    
+                        <!-- <a href="javascript:;" data-index="1">异常设备监控</a> -->
+                    </div>
+                    <div class="content" >
+                        <div class="XS head1" id="44">
+                            <div>
+                                1. 消费者对价格优惠的关注，如99元11份牛肉饼和169 &nbsp&nbsp&nbsp元8份牛排。<br/>
+                                2. 消费者关注产品的新鲜度，如刚才上来牛排是生的和 &nbsp&nbsp&nbsp牛排熟的。<br/>
+                                3. 消费者关心配送服务，如要求帮快配送之前购买的牛 &nbsp&nbsp&nbsp排。<br/>
+                                4. 消费者对产品口感和质量的关注，如问是生的还是熟 &nbsp&nbsp&nbsp的。<br/>
+                                5. 消费者在购买过程中需要更多选择，如再买点怎么买 &nbsp&nbsp&nbsp呢。
+                            </div>
+                        </div>
+                        <div class="XS head1" id="21">
+                            <div>
+                                1. 难以找到订单信息<br/>
+                                2. 对于退款和兑换券的疑问<br/>
+                                3. 需要查看已购买的商品或券<br/>
+                                4. 对于免运费和优惠券的使用<br/>
+                                5. 退款和使用券的疑问<br/>
+                                6. 在应用程序中找不到相关页面或选项
+                            </div>
+                        </div>
+                        <div class="XS head1" id="26">
+                            <div>
+                                1. 消费者喜欢硬核肉多多，夏威夷，榴莲披萨，意式肉 &nbsp&nbsp&nbsp酱面等产品<br/>
+                                2. 消费者对产品组合和口味的创新表示兴趣，如薯角培 &nbsp&nbsp&nbsp根+硬核肉多多、咖喱牛肉和芝士榴莲等。<br/>
+                                3. 消费者关注产品的细节，如榴莲铁盘的薄厚或牛肉的 &nbsp&nbsp&nbsp口感。<br/>
+                                4. 消费者对优惠活动和推荐系统表示兴趣，如2件99的 &nbsp&nbsp&nbsp推荐。
+                            </div>
+                        </div>
+                        <div class="XS head1" id="25">
+                            <div>
+                                1. 消费者对宠物隧道床的需求量大，经常询问是否有货  &nbsp&nbsp&nbsp或何时到货。<br/>
+                                2. 消费者对产品样式和价格有疑问，需要更多的产品信  &nbsp&nbsp&nbsp息和优惠。<br/>
+                                3. 消费者对产品的质量和实用性也有一定关注，会询问  &nbsp&nbsp&nbsp产品的材质和功能。<br/>
+                                4. 一些消费者会同时购买多个宠物产品，如冰垫、隧道  &nbsp&nbsp&nbsp床等。<br/>
+                                5. 消费者对联名款产品有更高的购买欲望。<br/>
+                            </div>
+                        </div>
+                        <div class="XS head1" id="12">
+                            <div>
+                                1. 送达时间选错、送达预计不准确<br/>
+                                2. 地址修改、预约时间修改需求<br/>
+                                3. 消费者在等待过程中的体验一般，期待更实时的送达
+                            </div>
+                        </div>
+                        <div class="XS head1" id="3">
+                            <div>
+                                1. 消费者希望配送范围更广，以便更多地方可以享受到 &nbsp&nbsp&nbsp服务。<br/>
+                                2. 部分消费者感到配送范围很紧凑，导致购买困难。<br/>
+                                3. 消费者对配送范围的信息需要更准确，以免购买失望。<br/>
+                                4. 配送范围问题影响了部分消费者的购买意愿。<br/>
+                                5. 消费者希望配送范围问题得到解决，以提高购物体验。
+                            </div>
+                        </div>
+                        <div class="XS head1" id="35">
+                            <div>
+                                1. 消费者关心座位预定服务，以便于避免走进餐厅时无 &nbsp&nbsp&nbsp座位。<br/>
+                                2. 预定座位的过程和规定方式需要详细说明，以满足消 &nbsp&nbsp&nbsp费者需求。<br/>
+                                3. 消费者对座位预定有不同的时间需求，如中午、晚上 &nbsp&nbsp&nbsp和周末。<br/>
+                                4. 消费者对座位质量和位置有特定要求，例如靠窗或具 &nbsp&nbsp&nbsp有特定氛围的位置。<br/>
+                                5. 顾客对座位预定的服务感兴趣，希望得到及时和有效 &nbsp&nbsp&nbsp的回应。
+                            </div>
+                        </div>
+                        <div class="XS head1" id="33">
+                            <div>
+                                1. 消费者关心门店开业时间和装修情况，怀疑是否会影 &nbsp&nbsp&nbsp响到购买行为。<br/>
+                                2. 消费者关注装修和停业信息，表现出对品牌的关注和 &nbsp&nbsp&nbsp关心。<br/>
+                                3. 消费者关注营业时间，希望有更多的购买时机。<br/>
+                          
+                            </div>
+                        </div>
+                        <div class="XS head1" id="22">
+                            <div>
+                                1.消费者对开发票的需求不同，有些需要全部开，有  &nbsp&nbsp&nbsp些需要某些单据的开发。<br/>
+                                2.消费者在访问期间可能有不同的时间需求，有些在午 &nbsp&nbsp&nbsp间需要开发，有些在其他时间需要开发。<br/>
+                                3.消费者对开发票的快速性和便捷性有较高要求，不希 &nbsp&nbsp&nbsp望等待过长时间。<br/>
+                                4.消费者对于开发票的费用有不同的认知，有些认为免 &nbsp&nbsp&nbsp费，有些认为需要支付。<br/>
+                                5.消费者在某些情况下可能需要借用或打印流水，以满 &nbsp&nbsp&nbsp足开发票需求。
+                            </div>
+                        </div>
+                        <div class="XS head1" id="28">
+                            <div>
+                                1. 消费者在考虑适当的课程和课程时间，以满足孩子的需求。<br/>
+                                2. 消费者关注孩子的饮食需求，选择适合孩子的食物。<br/>
+                                3. 消费者注孩子的情感需求，尊重孩子的喜好和不喜欢。<br/>
+                                4. 消费者对孩子的学习状况关注，关注孩子的学习成绩和情绪。
+
+                            </div>
+                        </div>
+                        <div class="XS head1" id="13">
+                            <div>
+                                1.消费者对新人邀请的具体方法和条件有很大兴趣，希 &nbsp&nbsp&nbsp望获得更多详细信息。<br/>
+                                2.部分消费者感兴趣于邀请新人进群的优惠活动，如0元 &nbsp&nbsp&nbsp享受或送甜品。<br/>
+                                3.消费者对于邀请新人入群的限制和规则有一定的疑虑， &nbsp&nbsp&nbsp希望确认是否符合要求。<br/>
+                                4.消费者对于邀请新人入群的群组规模和内容感兴趣， &nbsp&nbsp&nbsp希望加入有趣的群组。<br/>
+                                5.部分消费者对于邀请新人入群的折扣和优惠政策表示  &nbsp&nbsp&nbsp兴趣，希望获得更多优惠。
+                            </div>
+                        </div>
+                        <div class="XS head1" id="18">
+                            <div>
+                                1. 消费者对产品与图片的不匹配表示担忧，认为实物   &nbsp&nbsp&nbsp与图片相差太大。<br/>
+                                2. 消费者关注产品质量，提出实物与图片相差的问题。<br/>
+                                3. 消费者关注店铺布置的场景，需要提供图片。
+                            </div>
+                        </div>
+                        <div class="XS head1" id="10">
+                            <div>
+                                1. 消费者对帕尼尼冰豆浆和鸡肉卷产品的品质表示满   &nbsp&nbsp&nbsp意，让它们愿意再次购买。<br/>
+                                2. 部分消费者对于早餐产品的需求较高，期望品牌能   &nbsp&nbsp&nbsp提供更多符合早餐需求的产品。<br/>
+                                3. 消费者可以在不同楼层和不同时间购买产品，满足   &nbsp&nbsp&nbsp不同需求。
+                            </div>
+                        </div>
+                        <div class="XS head1" id="23">
+                            <div>
+                                1. 消费者对打折优惠的需求和期望持续，主食打折优惠   &nbsp&nbsp&nbsp吸引力强烈。<br/>
+                                2. 消费者对年卡权益的需求，期望更多优惠和券的发放。<br/>
+                                4. 费者对优惠活动的细节和执行需求，关注卡券使用规   &nbsp&nbsp&nbsp则，主食使用范围等<br/>
+                                4. 消费者对优惠活动的满意度和不满意度，关注送餐权   &nbsp&nbsp&nbsp益和权益差异。
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="tabs" style="margin-top: 17px;">
+                        <a href="javascript:;" data-index="0" class="active">对品牌营销和启发的建议</a>
+                   
+
+                    </div>
+                    <div class="content " >
+                        <div class="XS head1" id="44">
+                            <div>
+                                1.加强产品成分的核实，消除消费者对真实性的担忧。<br/>
+                                2.完善配送服务，提供更便捷的在家服务，满足消费者  &nbsp&nbsp&nbsp的需求。<br/>
+                                3.制定更多优惠活动和价格优惠，吸引消费者购买。
+                            </div>
+                        </div>
+
+                        <div class="XS head1" id="21">
+                            <div>
+                                1.提高网站和应用程序的导航性，使消费者更容易找到  &nbsp&nbsp&nbsp所需的页面和选项。<br/>
+                                2.提供更详细的退款和兑换券的指导，帮助消费者解决  &nbsp&nbsp&nbsp疑问。<br/>
+                                3.设置一个带有详细信息的“已购买”或“我的订单”  &nbsp&nbsp&nbsp页面，方便消费者查看购买历史和已核销商品。<br/>
+                                4.优化应用程序，使消费者能够更方便地使用券和卡券。
+                            </div>
+                        </div>
+                        <div class="XS head1" id="26">
+                            <div>
+                                1.开发更多创新的产品和口味，满足不同消费者的需求  &nbsp&nbsp&nbsp和偏好。<br/>
+                                2.优化产品推荐系统，提高消费者的购买体验和满意度。<br/>
+                                3.提升线上和线下服务质量，确保消费者在使用过程中  &nbsp&nbsp&nbsp能够获得优质的体验。
+
+                            </div>
+                        </div>
+                        <div class="XS head1" id="25">
+                            <div>
+                                1.增加宠物隧道床的库存，并定期更新库存信息，以满足消费者的需  &nbsp&nbsp&nbsp求。<br/>
+                                2.推出更多萌宠套餐，并提供套餐优惠，以吸引更多消费者购买。<br/>
+                                3.与其他知名品牌联名推出更多新颖的产品，提高消费者的购买欲望。 &nbsp&nbsp&nbsp推广内容。
+                            </div>
+                        </div>
+                        <div class="XS head1" id="3">
+                            <div>
+                                1.调整配送范围，使其更加广泛，满足消费者需求。<br/>
+                                2.提供更准确的配送范围信息，减少消费者的购买失望。<br/>
+                                3.配送合作伙伴建立紧密合作关系，确保配送质量。
+                            </div>
+                        </div>
+                        <div class="XS head1" id="35">
+                            <div>
+                                1.提供更丰富的座位预定服务，满足不同消费者需求，  &nbsp&nbsp&nbsp如提供宽领、高档或家庭类别的座位。<br/>
+                                2.优化在线预定系统，使其更易于使用和搜索，提高消  &nbsp&nbsp&nbsp费者体验。<br/>
+                                3.加强与餐厅的沟通，确保座位预定服务的有效性和及  &nbsp&nbsp&nbsp时性，提升消费者满意度。
+                            </div>
+                        </div>
+                        <div class="XS head1" id="33">
+                            <div>
+                                1. 品牌应及时更新门店信息，包括开业时间、装修状况  &nbsp&nbsp&nbsp和停业通知，以满足消费者的需求。<br/>
+                                2. 考虑扩展营业时间，提高消费者购买的机会。<br/>
+                                3. 加强在社交媒体上的互动，与消费者建立更紧密的联  &nbsp&nbsp&nbsp系。
+                            </div>
+                        </div>
+                        <div class="XS head1" id="22">
+                            <div>
+                                1.提供更加灵活的开发票服务，满足不同消费者的需求，  &nbsp&nbsp&nbsp如提供选择全部开发或选择某些单据开发的选项。<br/>
+                                2.优化服务流程，提高开发票的快速性和便捷性，以满  &nbsp&nbsp&nbsp足消费者的实际需求。<br/>
+                                3.明确开发票的费用政策，并在服务过程中进行沟通，  &nbsp&nbsp&nbsp消除消费者的误解。
+                            </div>
+                        </div>
+                        <div class="XS head1" id="13">
+                            <div>
+                                1.提供明确的新人邀请规则和流程，以帮助消费者更好  &nbsp&nbsp&nbsp地理解和操作。<br/>
+                                2.举办线上线下活动，鼓励消费者邀请新人加入群组，  &nbsp&nbsp&nbsp提高群组活跃度。<br/>
+                                3.提供具有吸引力的新人福利，如限时折扣、优惠券或  &nbsp&nbsp&nbsp特权，以吸引更多新用户。
+                            </div>
+                        </div>
+                        <div class="XS head1" id="18">
+                            <div>
+                                1.提高产品图片与实物的匹配程度，减少消费者的误解。<br/>
+                                2.关注产品质量和服务，提升品牌形象。<br/>
+                                3.考虑店铺布置和场景优化，提升消费者体验。
+                            </div>
+                        </div>
+                        <div class="XS head1" id="23">
+                            <div>
+                                1.优化主食打折优惠活动，提高优惠券的可用性和易用  &nbsp&nbsp&nbsp性，以满足消费者对打折优惠的需求。<br/>
+                                2.完善年卡权益，提高年卡权益的价值和吸引力，以满  &nbsp&nbsp&nbsp足消费者对年卡权益的期望。<br/>
+                                3.保障品质和服务稳定性，关注炸焦程度和发酵时间，  &nbsp&nbsp&nbsp提高消费者对品质和服务的满意度。<br/>
+                                4.优化优惠活动规则，确保消费者在使用卡券时能够顺  &nbsp&nbsp&nbsp利消费，提高消费者对优惠活动的满意度
+                            </div>
+                        </div>
+                        <div class="XS head1" id="12">
+                            <div>
+                                1. 提高送达服务的精确性，确保预计送达时间与实际送  &nbsp&nbsp&nbsp达时间保持一致。<br/>
+                                2. 优化地址修改和预约时间修改的流程，提高客户满意  &nbsp&nbsp&nbsp度。<br/>
+                                3. 提供实时送达信息，弥补消费者在等待过程中的误导。<br/>
+                                4. 完善订单修改、取消、派送等功能，满足消费者多样  &nbsp&nbsp&nbsp化需求。
+                            </div>
+                        </div>
+                        <div class="XS head1" id="28">
+                            <div>
+                                1. 开发具有教育性的产品，满足孩子在学习和娱乐方面  &nbsp&nbsp&nbsp的需求。<br/>
+                                2. 提供个性化的服务，根据孩子的年龄、兴趣和需求，  &nbsp&nbsp&nbsp推荐合适的产品和活动。<br/>
+                                3. 举办家长和孩子共同参与的活动，增进家长和品牌之  &nbsp&nbsp&nbsp间的联系。
+                            </div>
+                        </div>
+                        <div class="XS head1" id="10">
+                            <div>
+                                
+                                1.产品创新：开发更多类型的冰豆浆和鸡肉卷组合，满  &nbsp&nbsp&nbsp足不同消费者的口味需求。<br/>
+                                2.在线系统优化：完善网站和手机APP的购物体验，方  &nbsp&nbsp&nbsp便消费者进行购买。<br/>
+                                3.营销策略：利用社交媒体和线下活动吸引更多潜在消  &nbsp&nbsp&nbsp费者。<br/>
+                                4.定价策略：在保持价格合理的前提下，适当降低产品  &nbsp&nbsp&nbsp价格，提高销量。<br/>
+                                5.客户关系管理：加强与消费者的互动，了解消费者需  &nbsp&nbsp&nbsp求，提升客户满意度。
+                             <br/>
+                              
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tabs" style="margin-top: 17px;">
+                        <a href="javascript:;" data-index="0" class="active">关键词</a>
+                      
+
+                    </div>
+
+                    <div class="content3">
+                        <div class="XS head" id="44">
+                            <div>
+                                1. 生的牛排
+                                2. 价格和包装
+                                3. 成分核实
+                                4. 配送服务<br/>
+                                5. 优惠活动
+                            </div>
+                        </div>
+
+                        <div class="XS head1" id="21">
+                            <div>
+                                1.订单查询
+                                2.退款
+                                3.兑换券
+                                4.使用方法
+                            </div>
+                        </div>
+                        <div class="XS head1" id="26">
+                            <div>
+                                1. 硬核肉多多
+                                2. 夏威夷
+                                3. 铁盘
+                                4. 榴莲
+                                5. 薯角培根
+
+                            </div>
+                        </div>
+                        <div class="XS head1" id="25">
+                            <div>
+                                1. 宠物隧道床
+                                2. 宠物隧道
+                                3. 联名猫隧道
+                                4. 宠物套餐。
+                            </div>
+                        </div>
+                        <div class="XS head1" id="12">
+                            <div>
+                                1. 送达时间
+                                2. 地址修改
+                                3. 预约时间
+                                4. 消费者等待
+                            </div>
+                        </div>
+                        <div class="XS head1" id="3">
+                            <div>
+                                1. 配送范围
+                                2. 不在配送范围
+                                3. 配送范围信息<br/>
+                                4. 特定区域配送
+                            </div>
+                        </div>
+                        <div class="XS head1" id="35">
+                            <div>
+                                1. 座位预订
+                                2. 桌子
+                                3. 顾客需求
+                            </div>
+                        </div>
+                        <div class="XS head1" id="33">
+                            <div>
+                                1. 门店营业时间
+                                2. 装修
+                                3. 开业
+                            </div>
+                        </div>
+                        <div class="XS head1" id="22">
+                            <div>
+                                1. 发票
+                                2. 困扰
+                                3. 系统
+                                4. 服务效率
+                                5. 打印流水
+                            </div>
+                        </div>
+                        <div class="XS head1" id="28">
+                            <div>
+                                1. 孩子
+                                2. 课程
+                                3. 饮食
+                                4. 安全
+                                5.产品
+                            </div>
+                        </div>
+                        <div class="XS head1" id="13">
+                            <div>
+                                1.新人邀请
+                                2.邀请规则
+                                3.0元甜品
+                                4.折扣
+                            </div>
+                        </div>
+                        <div class="XS head1" id="18">
+                            <div>
+                                1. 实物与图片不符
+                                2. 订餐流程
+                                3. 店铺布置
+                            </div>
+                        </div>
+                        <div class="XS head1" id="10">
+                            <div>
+                                1. 冰豆浆帕尼尼
+                                2. 鸡肉卷热豆浆
+                                3. 购买时间
+                            </div>
+                        </div>
+                        <div class="XS head1" id="23">
+                            <div>
+                                1. 主食打折
+                                2. 年卡权益
+                                3. 优惠活动
+                                4. 卡券使用
+                            </div>
+                        </div>
+                 
+                
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- 中间 -------------------------------------------------------------------------------------------------------------------->
+
+        </div>
+        <div class="columnBig">
+
+            <!-- 中一------------------------------------------------------------------------------------------------------ -->
+            <div class="paihang panel">
+                <div class="inner">
+                    <img src="./images/11.png" alt="">
+                    <div class="headd">
+                        <span class="col"># 热门话题</span>
+                        <span class="col" style="margin-right: 12px;">热度</span>
+                    </div>
+
+                    <div class=" boxnav paim">
+                        <ul class="h100">
+							
+                            
+                    <li>
+                        <span>1</span>
+                        <div class=" pmnav">
+                            <p id="defaultTag0" onclick="showContent('44')">对生牛排和牛肉饼的关注和需求</p>
+                            <div class="pmbar"><span style="width:84%"></span><i>2522</i></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>2</span>
+                        <div class="pmnav">
+                            <p onclick="showContent('21')">对线上订单查看和优惠券使用的疑问</p>
+                            <div class="pmbar"><span style="width:83%"></span><i>2500</i></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>3</span>
+                        <div class="pmnav">
+                            <p onclick="showContent('26')"> 对硬核肉多多和夏威夷产品的需求和喜好 </p>
+                            <div class="pmbar"><span style="width:66%"></span><i>1972</i></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>4</span>
+                        <div class="pmnav">
+                            <p onclick="showContent('25')">关心宠物隧道床产品 </p>
+                            <div class="pmbar"><span style="width:40%"></span><i>1187</i></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>5</span>
+                        <div class="pmnav">
+                            <p onclick="showContent('12')">对送餐的送达时间和查看的关注和不满</p>
+                            <div class="pmbar"><span style="width:38%"></span><i>1129</i></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>6</span>
+                        <div class="pmnav">
+                            <p onclick="showContent('3')">对配送范围的关注和不满</p>
+                            <div class="pmbar"><span style="width:31%"></span><i>936</i></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>7</span>
+                        <div class="pmnav">
+                            <p onclick="showContent('35')">对座位预定的需求和疑虑 </p>
+                            <div class="pmbar"><span style="width:31%"></span><i>916</i></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>8</span>
+                        <div class="pmnav">
+                            <p onclick="showContent('33')">对门店装修，营业的关注和需求</p>
+                            <div class="pmbar"><span style="width:30%"></span><i>895</i></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>9</span>
+                        <div class="pmnav">
+                            <p onclick="showContent('22')">对于开发票的需求和困扰</p>
+                            <div class="pmbar"><span style="width:21%"></span><i>636</i></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>10</span>
+                        <div class="pmnav">
+                            <p onclick="showContent('28')">对孩子相关产品和服务的需求和评价</p>
+                            <div class="pmbar"><span style="width:15%"></span><i>461</i></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>11</span>
+                        <div class="pmnav">
+                            <p onclick="showContent('13')">对新人邀请和新人礼的需求和疑问</p>
+                            <div class="pmbar"><span style="width:15%"></span><i>452</i></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>12</span>
+                        <div class="pmnav">
+                            <p onclick="showContent('18')">对食物图片和店铺图片的需求和疑问</p>
+                            <div class="pmbar"><span style="width:15%"></span><i>449</i></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>13</span>
+                        <div class="pmnav">
+                            <p onclick="showContent('10')">对冰豆浆帕尼尼与鸡肉卷热豆浆的讨论</p>
+                            <div class="pmbar"><span style="width:13%"></span><i>386</i></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>14</span>
+                        <div class="pmnav">
+                            <p onclick="showContent('23')">主食打折和年卡权益的推广和消费者反馈</p>
+                            <div class="pmbar"><span style="width:12%"></span><i>354</i></div>
+                        </div>
+                    </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 中2------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+        <div class="qushitu panel">
+            <div class="inner">
+                <img src="images/6.png" alt="">
+
+
+                <div class="mapnav2">
+                    <div class="box">
+
+                        <div class="boxnav" style="height: 180px;margin-top: 20px;" id="sysx">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 右------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+    <div class="columnSmall">
+        <!-- 右一-------------------------------------------------------------------------------------------------------------------------------------------- -->
+        <div class="order panel">
+            <div class="inner">
+                <img src="./images/9.png" alt="">
+
+
+                <div class="box" id="">
+                    <div style="float: left; width: 100%; height: 270px; margin-top: -20px;" id="fb01"></div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+        <!-- 销售额 -->
+        <!-- 右二------------------------------------------------------------------------------------------------------------------------------------- -->
+        <div class="order panel">
+            <div class="inner">
+                <img src="images/8.png" alt="">
+                <div class="qingan">
+                    <ul class="topic" id="44">
+                        <img src="images/ciyun/44.png" alt="">
+                    </ul>
+                    <ul class="topic" id="21">
+                        <img src="images/ciyun/21.png" alt="">
+                    </ul>
+                    <ul class="topic" id="26">
+                        <img src="images/ciyun/26.png" alt="">
+                    </ul>
+                    <ul class="topic" id="25">
+                        <img src="images/ciyun/25.png" alt="">
+                    </ul>
+                    <ul class="topic" id="12">
+                        <img src="images/ciyun/12.png" alt="">
+                    </ul>
+                    <ul class="topic" id="3">
+                        <img src="images/ciyun/3.png" alt="">
+                    </ul>
+                    <ul class="topic" id="35">
+                        <img src="images/ciyun/35.png" alt="">
+                    </ul>
+                    <ul class="topic" id="33">
+                        <img src="images/ciyun/33.png" alt="">
+                    </ul>
+                    <ul class="topic" id="22">
+                        <img src="images/ciyun/22.png" alt="">
+                    </ul>
+                    <ul class="topic" id="28">
+                        <img src="images/ciyun/28.png" alt="">
+                    </ul>
+                    <ul class="topic" id="13">
+                        <img src="images/ciyun/13.png" alt="">
+                    </ul>
+                    <ul class="topic" id="18">
+                        <img src="images/ciyun/18.png" alt="">
+                    </ul>
+                    <ul class="topic" id="10">
+                        <img src="images/ciyun/10.png" alt="">
+                    </ul>
+                    <ul class="topic" id="23">
+                        <img src="images/ciyun/23.png" alt="">
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 排行榜 -->
+        <!-- 右三------------------------------------------------------------------------------------------------------------------------------------------------ -->
+        <div class="order panel">
+            <div class="inner">
+                <img src="images/10.png" alt="" ">
+                <div class="qingan" >
+                    <ul class="topic" id="44">
+                        <li>就是一套吧，一套169元8份牛排吗</li>
+                        <li>在吗，我买的牛排选的今天派送</li>
+                        <li>为什么最近不给我推荐套餐？</li>
+                        <li>亲，这个牛排是生的还是熟的</li>
+                        <li>你好，四人餐有推荐套餐吗</li>
+                        <li>生的牛排可以买吗</li>
+                        <li>您好，牛排大概几点可以配送啊</li>
+                        <li>你好，这个牛排买了是你们配送到家吗</li>
+                    </ul>
+
+                    <ul class="topic anli" id="21">
+                        <li>购买了，怎么不显示59的卷呀</li>
+                        <li>已经显示完成</li>
+                        <li>显示还是待完成</li>
+                        <li>@必胜福利官CD5 我拉了，没显示完成</li>
+                        <li>姐我这边显示全完成了</li>
+                        <li>现在怎么不显示尊享卡了</li>
+                        <li>尊享卡显示有一次免运费</li>
+                        <li>已支付完成</li>
+                    </ul>
+
+                    <ul class="topic anli" id="26">
+                        <li>意式肉酱风味</li>
+                        <li>要硬核肉多多和夏威夷风情</li>
+                        <li>榴莲 和 夏威夷 要手拍的</li>
+                        <li>两个榴莲，一个普通薄脆，一个普通手拍</li>
+                        <li>铁盘+榴莲+芝士</li>
+                        <li>有铁盘的榴莲吗？</li>
+                        <li>两个榴莲铁盘的</li>
+                    </ul>
+
+                    <ul class="topic anli" id="25">
+                        <li>我想问下你们店有那个宠物隧道吗</li>
+                        <li>那个宠物隧道有吗</li>
+                        <li>169 宠物隧道的那个</li>
+                        <li>那个宠物隧道床有么</li>
+                        <li>有宠物隧道床吗</li>
+                        <li>你们有那个宠物隧道嘛</li>
+                        <li>你们店有这个宠物隧道床吧</li>
+                        <li>宠物隧道床</li>
+                    </ul>
+
+                    <ul class="topic anli" id="12">
+                        <li>10.56送达的订单现在都没出餐</li>
+                        <li>好的，要告诉你地址吗</li>
+                        <li>我告诉你地址 </li>
+                        <li>今天订单要多久能做好？</li>
+                        <li>我的订单做好了吗</li>
+                        <li>我这个订单还没做好吗</li>
+                        <li>你好，问一下订单做好了吗</li>
+                        <li>下午茶时间？</li>
+                    </ul>
+
+                    <ul class="topic anli" id="3">
+                        <li>我这不在配送范围</li>
+                        <li>配送范围是几公里啊</li>
+                        <li>你们的配送范围是哪里</li>
+                        <li>@王雪桦 不再配送范围内</li>
+                        <li>贡山一号是不是配送范围</li>
+                        <li>在配送范围内吗？</li>
+                        <li>那边没在配送范围，我私聊您给你送</li>
+                        <li>不在配送范围</li>
+                    </ul>
+
+                    <ul class="topic anli" id="35">
+                        <li>能预约座位吗</li>
+                        <li>您好，能预约座位吗？</li>
+                        <li>可以预约座位吗？</li>
+                        <li>酷暑渐消隐，新凉值万金[呲牙]</li>
+                        <li>在靠窗那边的座位</li>
+                        <li>你好中午能帮我预定个6个人的桌吗？</li>
+                        <li>C02排队号。有位置了没</li>
+                        <li>能帮我找预定个位子吗</li>
+                    </ul>
+
+                    <ul class="topic anli" id="33">
+                        <li>你好，时代风帆的必胜客还回开业吗？</li>
+                        <li>日月光在装修吗</li>
+                        <li>花园路店开门了么？</li>
+                        <li>花园路也没开门啊</li>
+                        <li>营业时间怎么样？全天营业吗？</li>
+                        <li>你好，银湖时代店关门了嘛？</li>
+                        <li>日月光必胜客营业吗？</li>
+                        <li>茂业店装修？</li>
+                        <li>麻烦问一下，是时代风帆的必胜客开了吗？</li>
+                        <li>大润发店什么时候开门</li>
+                        <li>什么时候开门</li>
+                    </ul>
+
+                    <ul class="topic anli" id="22">
+                        <li>请开下发票</li>
+                        <li>你好  这三单可以帮我开下发票吗</li>
+                        <li>我要开下发票</li>
+                        <li>发票你还没开给我</li>
+                        <li>你好，我的发票没开全，麻烦开一下</li>
+                        <li>发票一下午还没开成功[捂脸]</li>
+                        <li>你发票还没开</li>
+                        <li>发票能开吗</li>
+                    </ul>
+
+                    <ul class="topic anli" id="28">
+                        <li>可以几个大人参加？</li>
+                        <li>问一下，娃娃过生日收不收场地费？</li>
+                        <li>肋眼更适合孩子是吧</li>
+                        <li>娃娃吃，比较废料汁</li>
+                        <li>啊 堂食嘛 娃娃在上面上课</li>
+                        <li>带孩子玩的开心😃</li>
+                        <li>主要孩子玩得开心</li>
+                        <li>孩子一定很开心</li>
+                    </ul>
+
+                    <ul class="topic anli" id="13">
+                        <li>是不是邀请新人可以送冰淇凌球</li>
+                        <li>如何邀请新人入群</li>
+                        <li>邀请一位有甜品🍮</li>
+                        <li>邀请一个人能得甜品一份</li>
+                        <li>邀请一人入群就可以领甜品吗</li>
+                        <li>@必胜福利官HN2 新人进群礼</li>
+                        <li>新人进群</li>
+                        <li>新人进群有下面0元享是不是</li>
+                    </ul>
+
+                    <ul class="topic anli" id="18">
+                        <li>爱是一种信仰，把我带到你的身旁——信仰</li>
+                        <li>鲨鱼辣椒改行了</li>
+                        <li>我是信仰缺失</li>
+                        <li>看看里面黑色的东西</li>
+                        <li>我想看看菜品多少钱</li>
+                        <li>我也是被今天的场景震惊到了</li>
+                        <li>布置的东西有哪些场景可以选吗[愉快]</li>
+                        <li>后面的场景是你们布置吗？</li>
+                    </ul>
+
+                    <ul class="topic anli" id="10">
+                        <li>帕尼尼➕冰豆浆 8:50取</li>
+                        <li>2楼joowii帕尼尼豆浆</li>
+                        <li>2楼joowii一份帕尼尼豆浆</li>
+                        <li>4楼jeep一份帕尼尼豆浆</li>
+                        <li>帕尼尼冰豆浆，8点25</li>
+                        <li>帕尼尼冰豆浆，3分钟到</li>
+                        <li>那豆浆不要了只要帕尼尼</li>
+                        <li>帕尼尼加豆浆2份</li>
+                    </ul>
+
+                    <ul class="topic anli" id="23">
+                        <li>主食包括哪些呀</li>
+                        <li>我想问一下这个主食类产品都包括什么？</li>
+                        <li>是个数还是品种？</li>
+                        <li>有指定哪两件还是任意的</li>
+                        <li>开盘3700支红，现在1400支红了。</li>
+                        <li>这个精选主食5折，有哪些品种？</li>
+                        <li>尊享卡打折后还能再送？</li>
+                        <li>这个年卡有什么特权？</li>
+                    </ul>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+<!-- <script src="js/jquery.min.js"></script>
+<script src="js/echarts.min.js"></script>
+<script src="js/index.js"></script>
+
+<script src="js/china.js"></script>
+<script src="js/mymap.js"></script>
+<script src="js/69echarts.min.js"></script>
+<script src="js/jquery.js"></script>
+ -->
+
+
+</html>

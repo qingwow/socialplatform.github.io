@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PH 企微热点追踪数据大屏</title>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery4.js"></script>
+    <script src="./js/echarts.min2.js"></script>
+    <script src="./js/echarts4.min.js"></script>
+    <!-- <script src="./js/echarts.min1.js"></script> -->
+    <script src="./js/index.js"></script>
+    <script src="./js/js1.js"></script>
+    
+    <script src="./js/bubble.js"></script>
+    <!-- <script src="./js/jquery.js"></script> -->
+
+
+
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./fonts/icomoon.css">
+</head>
+
+<body>
+
+
+    <div class="viewport">
+        <!-- <div class="bt">xxx校友会数据大屏</div> -->
+        <div class="my-div">
+            <p class="LOGO"><img src="./images/logo2.png" alt=""></p>
+            <p class="biaoti">PH 企微热点追踪数据大屏</p>
+            <p class="tab1">
+                <a href="index.html">总体分析</a>
+                <a href="index2.html">用户画像</a>
+            </p>
+        </div>
+
+        <div class="columnSmall">
+
+            <!-- 左一 --------------------------------------------------------------------------------------------------------------------------->
+            <div class="paihang panel">
+                <div class="inner">
+                    <img src="images/20.png" alt="">
+                    <div class="headd">
+                        <span class="col"># 组织名称</span>
+                        <span class="col" style="margin-right: 12px;">发布数量</span>
+                    </div>
+
+                    <div class=" boxnav paim">
+                        <ul class="h100">
+							
+                            
+                    <li class="active">
+                        <span>1</span>
+                        <div class=" pmnav">
+                            <p  id="defaultTag" onclick="show('44')">对生牛排和牛肉饼的关注和需求</p>
+                            <div class="pmbar"><span style="width:92%"></span><i>2522</i></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>2</span>
+                        <div class="pmnav">
+                            <p onclick="show('21')">对线上订单查看和优惠券使用的疑问</p>
+                            <div class="pmbar"><span style="width:90%"></span><i>2500</i></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>3</span>
+                        <div class="pmnav">
+                            <p onclick="show('26')">对榴莲产品和各种产品组合的需求和喜好</p>
+                            <div class="pmbar"><span style="width:88%"></span><i>1972</i></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>4</span>
+                        <div class="pmnav">
+                            <p onclick="show('25')">关心宠物隧道床产品 </p>
+                            <div class="pmbar"><span style="width:78%"></span><i>1187</i></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>5</span>
+                        <div class="pmnav">
+                            <p onclick="show('12')">对送餐的送达时间和查看的关注和不满</p>
+                            <div class="pmbar"><span style="width:76%"></span><i>1129</i></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>6</span>
+                        <div class="pmnav">
+                            <p onclick="show('3')">对配送范围的关注和不满</p>
+                            <div class="pmbar"><span style="width:45%"></span><i>936</i></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>7</span>
+                        <div class="pmnav">
+                            <p onclick="show('35')">对座位预定的需求和疑虑 </p>
+                            <div class="pmbar"><span style="width:43%"></span><i>916</i></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>8</span>
+                        <div class="pmnav">
+                            <p onclick="show('33')">对门店装修，营业的关注和需求</p>
+                            <div class="pmbar"><span style="width:40%"></span><i>895</i></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>9</span>
+                        <div class="pmnav">
+                            <p onclick="show('22')">对于开发票的需求和困扰</p>
+                            <div class="pmbar"><span style="width:38%"></span><i>636</i></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>10</span>
+                        <div class="pmnav">
+                            <p onclick="show('28')">对孩子相关产品和服务的需求和评价</p>
+                            <div class="pmbar"><span style="width:30%"></span><i>461</i></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>11</span>
+                        <div class="pmnav">
+                            <p onclick="show('13')">主对新人邀请和新人礼的需求和疑问</p>
+                            <div class="pmbar"><span style="width:28%"></span><i>452</i></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>12</span>
+                        <div class="pmnav">
+                            <p onclick="show('18')">对食物图片和店铺图片的需求和疑问</p>
+                            <div class="pmbar"><span style="width:27%"></span><i>449</i></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>13</span>
+                        <div class="pmnav">
+                            <p onclick="show('10')">对冰豆浆帕尼尼与鸡肉卷热豆浆的讨论</p>
+                            <div class="pmbar"><span style="width:22%"></span><i>386</i></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>14</span>
+                        <div class="pmnav">
+                            <p onclick="show('23')">主食打折和年卡权益的推广和消费者反馈</p>
+                            <div class="pmbar"><span style="width:20%"></span><i>354</i></div>
+                        </div>
+                    </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 左2 ------------------------------------------------------------------------------------------------------------------------->
+
+        <div class="monitor1 panel">
+            <div class="inner">
+                <div class="tabs">
+                    <span style="display: block; scale: 110%; margin:0 0 18px 10px; "><img src="./images/19.png" alt=""></span>
+                    <div style="width: 240px; float: left;margin-left: -17px;" class="boxnav" id="echart4"></div>
+                    <div style="width: 200px; float: right;margin-left: 15px;" class="boxnav" id="echart5"></div>
+                </div>
+                <div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- 中间 -------------------------------------------------------------------------------------------------------------------->
+
+    </div>
+
+
+    <div class="columnBig" style="width: 700px;">
+
+        <!-- 中一------------------------------------------------------------------------------------------------------ -->
+        <div class="map1">
+            <div class="inner">
+                <!-- <img src="./images/计数.jpg" alt=""> -->
+                <!-- <div class="qingan"> -->
+                    <ul class="shuliang" id="44">
+                        <img src="images/huqing/44.png" alt="">
+                    </ul>
+                    <ul class=" shuliang" id="21">
+                        <img src="images/huqing/21.png" alt="">
+                    </ul>
+                    <ul class=" shuliang" id="26">
+                        <img src="images/huqing/26.png" alt="">
+                    </ul>
+                    <ul class=" shuliang" id="25">
+                        <img src="images/huqing/25.png" alt="">
+                    </ul>
+                    <ul class=" shuliang" id="12">
+                        <img src="images/huqing/12.png" alt="">
+                    </ul>
+                    <ul class=" shuliang" id="3">
+                        <img src="images/huqing/3.png" alt="">
+                    </ul>
+                    <ul class=" shuliang" id="35">
+                        <img src="images/huqing/35.png" alt="">
+                    </ul>
+                    <ul class=" shuliang" id="33">
+                        <img src="images/huqing/33.png" alt="">
+                    </ul>
+                    <ul class=" shuliang" id="22">
+                        <img src="images/huqing/22.png" alt="">
+                    </ul>
+                    <ul class=" shuliang" id="28">
+                        <img src="images/huqing/28.png" alt="">
+                    </ul>
+                    <ul class=" shuliang" id="13">
+                        <img src="images/huqing/13.png" alt="">
+                    </ul>
+                    <ul class=" shuliang" id="18">
+                        <img src="images/huqing/18.png" alt="">
+                    </ul>
+                    <ul class=" shuliang" id="10">
+                        <img src="images/huqing/10.png" alt="">
+                    </ul>
+                    <ul class=" shuliang" id="23">
+                        <img src="images/huqing/23.png" alt="">
+                    </ul>
+                <!-- </div> -->
+            </div>
+            <div class="tabs">
+                <span style="display: block; scale: 100%; margin: 2px 0px;"><img src="./images/17.png" alt=""></span>
+            </div>
+
+            <!-- 地图 -->
+            <div class="map">
+                
+                <!-- <h3>
+                    <span class="icon-cube"></span>
+                    title
+                </h3> -->
+                <div class="chart">
+                    <div class="geo"></div>
+                </div>
+            </div>
+
+            
+        </div>
+
+
+        <!-- 中2------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+        <div class="qushitu panel">
+            <div class="inner">
+                <div class="tabs_img18">
+                    <img class="img18" src="./images/18.png" alt="" style="margin-left: -24px;">
+                </div>
+
+
+
+
+                <div class="boxnav" style="height: 150px;padding: 50 50px;">
+                    <div style="height: 248px; float: left; width: 35%; padding: 50 50px;">
+                        <!-- <div class="tit02 text-b" style="padding: 50 50px;">热门话题榜</div> -->
+                        <div class="huati">
+                            <!-- 44 -->
+                            <ul class="huatiPM " id="1">
+                                <li>1.蜜制酱烤香骨鸡3只装 <span class="text-s">1810 </span></li>
+                                <li>2.波纹薯条 <span class="text-s">879</span></li>
+                                <li>3.蜜制酱烤香骨鸡5只装 <span class="text-d">800 </span></li>
+                                <li>4.必胜椒盐香香鸡中 <span class="text-d">669 </span></li>
+                                <li>5.香草凤尾虾-3只-外 <span class="text-d">662 </span></li>
+                                <li>6.香草凤尾虾3只装 <span class="text-d">646 </span></li>
+                            </ul>
+                            <ul class="huatiPM pinlei" id="2">
+                                <li>1.普拍超级至尊 <span class="text-s">504 </span></li>
+                                <li>2.普铁薯角培根比萨 <span class="text-s">485 </span></li>
+                                <li>3.普拍薯角培根 <span class="text-d">474 </span></li>
+                                <li>4.普拍榴莲菠菠比萨 <span class="text-d">416 </span></li>
+                                <li>5.普铁超级至尊 <span class="text-d">385 </span></li>
+                                <li>6.普拍夏威夷风情 <span class="text-d">321 </span></li>
+                            </ul>
+                            <ul class="huatiPM pinlei" id="3">
+                                <li>1.整切调理西冷牛排1片 <span class="text-s">4746 </span></li>
+                                <li>2.生牛肉饼 <span class="text-s">1557 </span></li>
+                                <li>3.生整切肋眼牛排 <span class="text-d">1380 </span></li>
+                                <li>4.炭烤风味牛排 <span class="text-d">680 </span></li>
+                                <li>5.西冷牛排 <span class="text-d">518 </span></li>
+                                <li>6.臻选西冷牛排 <span class="text-d">410 </span></li>
+                            </ul>
+                            <ul class="huatiPM pinlei" id="4">
+                                <li>1.大红袍手打柠檬冰大杯 <span class="text-s">822 </span></li>
+                                <li>2.大红袍手打柠檬冷 <span class="text-s">526 </span></li>
+                                <li>3.卡曼橘暴打柠檬冰中 <span class="text-d">517 </span></li>
+                                <li>4.清雅卡曼橘茶(温) <span class="text-d">497 </span></li>
+                                <li>5.大红袍手打柠檬热 <span class="text-d">450 </span></li>
+                                <li>6.阳光橙橙中杯 <span class="text-d">429 </span></li>
+                            </ul>
+                            <ul class="huatiPM pinlei" id="5">
+                                <li>1.经典意式肉酱面 <span class="text-s">2017 </span></li>
+                                <li>2.生经典意式肉酱面 <span class="text-s">1934 </span></li>
+                                <li>3.经典意式肉酱面外带 <span class="text-d">1224 </span></li>
+                                <li>4.超级飞侠意式肉酱面 <span class="text-d">386 </span></li>
+                                <li>5.生黑椒鸡肉意面 <span class="text-d">289 </span></li>
+                                <li>6.麻酱鸡丝意面 <span class="text-d">242</span></li>
+                            </ul>
+                            <ul class="huatiPM pinlei" id="6">
+                                <li>1.流心提拉米苏 <span class="text-s">976 </span></li>
+                                <li>2.冰淇淋单球 <span class="text-s">556 </span></li>
+                                <li>3.精研抹茶雪域 <span class="text-d">345 </span></li>
+                                <li>4.冰淇淋双球 <span class="text-d">252 </span></li>
+                                <li>5.必胜DuangDuang兔 <span class="text-d">223 </span></li>
+                                <li>6.一只躺赢的小熊 <span class="text-d">179 </span></li>
+                            </ul>
+                            <ul class="huatiPM pinlei" id="7">
+                                <li>1.照烧鸡肉炒饭 <span class="text-s">1558 </span></li>
+                                <li>2.匈牙利风情牛肉焗饭 <span class="text-s">410 </span></li>
+                                <li>3.香滋滋牛肉饭 <span class="text-d">337 </span></li>
+                                <li>4.炙烤西冷牛排铁锅饭 <span class="text-d">292 </span></li>
+                                <li>5.葡式咖喱鸡肉饭外送 <span class="text-d">150 </span></li>
+                                <li>6.烤海鲈鱼海鲜铁锅饭 <span class="text-d">43 </span></li>
+                            </ul>
+                            <ul class="huatiPM pinlei" id="8">
+                                <li>1.整切调理西冷牛排1片 <span class="text-s">938 </span></li>
+                                <li>2.生整切肋眼牛排 <span class="text-s">419 </span></li>
+                                <li>3.生整切西冷650G特 <span class="text-d">6 </span></li>
+                            </ul>
+
+                            <!-- 21 -->
+                            <ul class="huatiPM " id="11">
+                                <li>1.蜜制酱烤香骨鸡3只装 <span class="text-s">3194 </span></li>
+                                <li>2.必胜椒盐香香鸡中 <span class="text-s">1345 </span></li>
+                                <li>3.波纹薯条 <span class="text-d">967 </span></li>
+                                <li>4.香草凤尾虾3只装 <span class="text-d">885 </span></li>
+                                <li>5.金枕榴莲芝士挞 <span class="text-d">838 </span></li>
+                                <li>6.外送浓情烤翅2只 <span class="text-d">757 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="12">
+                                <li>1.普拍薯角培根 <span class="text-s">639 </span></li>
+                                <li>2.普拍超级至尊 <span class="text-s">558 </span></li>
+                                <li>3.普铁超级至尊 <span class="text-d">544 </span></li>
+                                <li>4.普铁薯角培根比萨 <span class="text-d">507 </span></li>
+                                <li>5.普拍榴莲菠菠比萨 <span class="text-d">482 </span></li>
+                                <li>6.普铁榴莲菠菠比萨 <span class="text-d">449 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="13">
+                                <li>1.大红袍手打柠檬冰大杯 <span class="text-s">1092 </span></li>
+                                <li>2.卡曼橘暴打柠檬冰中 <span class="text-s">1085 </span></li>
+                                <li>3.清雅卡曼橘茶(冰) <span class="text-d">909 </span></li>
+                                <li>4.大红袍手打柠檬冷 <span class="text-d">752 </span></li>
+                                <li>5.清雅卡曼橘茶(温) <span class="text-d">712 </span></li>
+                                <li>6.百事可乐/杯 <span class="text-d">601 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="14">
+                                <li>1.经典意式肉酱面 <span class="text-s">2547 </span></li>
+                                <li>2.经典意式肉酱面外带 <span class="text-s">1485 </span></li>
+                                <li>3.生经典意式肉酱面 <span class="text-d">480 </span></li>
+                                <li>4.超级飞侠意式肉酱面 <span class="text-d">409 </span></li>
+                                <li>5.麻酱鸡丝意面 <span class="text-d">324 </span></li>
+                                <li>6.那不勒斯式肉丸面 <span class="text-d">237 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="15">
+                                <li>1. <span class="text-s">2303 </span></li>
+                                <li>2. <span class="text-s">726 </span></li>
+                                <li>3. <span class="text-d">666 </span></li>
+                                <li>4. <span class="text-d">399 </span></li>
+                                <li>5. <span class="text-d">206 </span></li>
+                                <li>6. <span class="text-d">58 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="16">
+                                <li>1.照烧鸡肉炒饭 <span class="text-s"> </span></li>
+                                <li>2.香滋滋牛肉饭 <span class="text-s"> </span></li>
+                                <li>3.匈牙利风情牛肉焗饭 <span class="text-d"> </span></li>
+                                <li>4.炙烤西冷牛排铁锅饭 <span class="text-d"> </span></li>
+                                <li>5.葡式咖喱鸡肉饭外送 <span class="text-d"> </span></li>
+                                <li>6.烤海鲈鱼海鲜铁锅饭 <span class="text-d"> </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="17">
+                                <li>1.流心提拉米苏 <span class="text-s">1122 </span></li>
+                                <li>2.冰淇淋单球 <span class="text-s">594 </span></li>
+                                <li>3.精研抹茶雪域 <span class="text-d">541 </span></li>
+                                <li>4.必胜DuangDuang兔 <span class="text-d">345 </span></li>
+                                <li>5.冰淇淋双球 <span class="text-d">243 </span></li>
+                                <li>6.一只躺赢的小熊 <span class="text-d">198 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="18">
+                                <li>1.鸡茸蘑菇汤 <span class="text-s">1322 </span></li>
+                                <li>2.酥皮奶油蛤蜊汤 <span class="text-s">172 </span></li>
+                                <li>3.牛肉罗宋汤 <span class="text-d">142 </span></li>
+                                <li>4.酥皮鸡茸蘑菇汤C <span class="text-d">5 </span></li>
+                                <li>5.意式香浓菜汤 <span class="text-d">4 </span></li>
+                            </ul>
+                         
+                            <!-- 26 -->
+                            <ul class="huatiPM " id="21">
+                                <li>1.普铁薯角培根比萨 <span class="text-s">580 </span></li>
+                                <li>2.普拍榴莲菠菠比萨 <span class="text-s">513 </span></li>
+                                <li>3.普拍薯角培根 <span class="text-d">509 </span></li>
+                                <li>4.普铁金枕榴莲菠菠 <span class="text-d">428 </span></li>
+                                <li>5.普铁榴莲菠菠比萨 <span class="text-d">401 </span></li>
+                                <li>6.普拍超级至尊 <span class="text-d">374 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="22">
+                                <li>1.蜜制酱烤香骨鸡3只装 <span class="text-s">1199 </span></li>
+                                <li>2.金枕榴莲芝士挞 <span class="text-s">871 </span></li>
+                                <li>3.必胜椒盐香香鸡中 <span class="text-d">595 </span></li>
+                                <li>4.三芝芝士挞 <span class="text-d">540 </span></li>
+                                <li>5.波纹薯条 <span class="text-d">539 </span></li>
+                                <li>6.香草凤尾虾3只装 <span class="text-d">485 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="23">
+                                <li>1.大红袍手打柠檬冰大杯 <span class="text-s">596 </span></li>
+                                <li>2.大红袍手打柠檬冷 <span class="text-s">459 </span></li>
+                                <li>3.卡曼橘暴打柠檬冰中 <span class="text-d">371 </span></li>
+                                <li>4.清雅卡曼橘茶(冰) <span class="text-d">359 </span></li>
+                                <li>5.阳光橙橙中杯 <span class="text-d">281 </span></li>
+                                <li>6.清雅卡曼橘茶(温) <span class="text-d">276 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="24">
+                                <li>1.整切调理西冷牛排1片 <span class="text-s">2440 </span></li>
+                                <li>2.生牛肉饼 <span class="text-s">819 </span></li>
+                                <li>3.炭烤风味牛排 <span class="text-d">444 </span></li>
+                                <li>4.生整切肋眼牛排 <span class="text-d">397 </span></li>
+                                <li>5.西冷牛排 <span class="text-d">287 </span></li>
+                                <li>6.臻选西冷牛排 <span class="text-d">189 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="25">
+                                <li>1.经典意式肉酱面 <span class="text-s">1166 </span></li>
+                                <li>2.生经典意式肉酱面 <span class="text-s">931 </span></li>
+                                <li>3.经典意式肉酱面外带 <span class="text-d">852 </span></li>
+                                <li>4.超级飞侠意式肉酱面 <span class="text-d">230 </span></li>
+                                <li>5.麻酱鸡丝意面 <span class="text-d">228 </span></li>
+                                <li>6.那不勒斯式肉丸面 <span class="text-d">106 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="26">
+                                <li>1.照烧鸡肉炒饭 <span class="text-s">1240 </span></li>
+                                <li>2.香滋滋牛肉饭 <span class="text-s">291 </span></li>
+                                <li>3.匈牙利风情牛肉焗饭 <span class="text-d">271 </span></li>
+                                <li>4.炙烤西冷牛排铁锅饭 <span class="text-d">198 </span></li>
+                                <li>5.葡式咖喱鸡肉饭外送 <span class="text-d">113 </span></li>
+                                <li>6.葡式咖喱鸡肉饭S1 <span class="text-d">18 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="27">
+                                <li>1.流心提拉米苏 <span class="text-s">644 </span></li>
+                                <li>2.冰淇淋单球 <span class="text-s">357 </span></li>
+                                <li>3.精研抹茶雪域 <span class="text-d">285 </span></li>
+                                <li>4.必胜DuangDuang兔 <span class="text-d">214 </span></li>
+                                <li>5.一只躺赢的小熊 <span class="text-d">148 </span></li>
+                                <li>6.冰淇淋双球 <span class="text-d">143 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="28">
+                                <li>1.熏鸡肉炒蛋帕尼尼 <span class="text-s">69 </span></li>
+                                <li>2.皮蛋瘦肉粥 <span class="text-s">61 </span></li>
+                                <li>3.熏鸡肉滑蛋帕尼尼 <span class="text-d">56 </span></li>
+                                <li>4.吞拿鱼帕尼尼70G <span class="text-d">45 </span></li>
+                                <li>5.新奥尔良鸡肉卷饼 <span class="text-d">37 </span></li>
+                                <li>6.法式吐司1片 <span class="text-d">34 </span></li>
+                            </ul>
+
+                            <!-- 25 -->
+                            <ul class="huatiPM " id="31">
+                                <li>1.蜜制酱烤香骨鸡3只装 <span class="text-s">851 </span></li>
+                                <li>2.必胜椒盐香香鸡中 <span class="text-s">432 </span></li>
+                                <li>3.香草凤尾虾3只装 <span class="text-d">347 </span></li>
+                                <li>4.金枕榴莲芝士挞 <span class="text-d">313 </span></li>
+                                <li>5.波纹薯条 <span class="text-d">306 </span></li>
+                                <li>6.蜜制酱烤香骨鸡5只装 <span class="text-d">292 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="32">
+                                <li>1.大红袍手打柠檬冰大杯 <span class="text-s">537 </span></li>
+                                <li>2.大红袍手打柠檬冷 <span class="text-s">327 </span></li>
+                                <li>3.卡曼橘暴打柠檬冰中 <span class="text-d">309 </span></li>
+                                <li>4.百事可乐大杯 <span class="text-d">307 </span></li>
+                                <li>5.百事可乐/杯 <span class="text-d">289 </span></li>
+                                <li>6.清雅卡曼橘茶(冰) <span class="text-d">270 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="33">
+                                <li>1.普拍薯角培根 <span class="text-s">237 </span></li>
+                                <li>2.普拍超级至尊 <span class="text-s">189 </span></li>
+                                <li>3.普拍榴莲菠菠比萨 <span class="text-d">152 </span></li>
+                                <li>4.普铁超级至尊 <span class="text-d">138 </span></li>
+                                <li>5.普铁薯角培根比萨 <span class="text-d">125 </span></li>
+                                <li>6.普拍肉多多比萨 <span class="text-d">118 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="34">
+                                <li>1.经典意式肉酱面 <span class="text-s">683 </span></li>
+                                <li>2.经典意式肉酱面外带 <span class="text-s">440 </span></li>
+                                <li>3.超级飞侠意式肉酱面 <span class="text-d">204 </span></li>
+                                <li>4.生经典意式肉酱面 <span class="text-d">191 </span></li>
+                                <li>5.麻酱鸡丝意面 <span class="text-d">120 </span></li>
+                                <li>6.奶油菌菇鸡肉培根面 <span class="text-d">74 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="35">
+                                <li>1.整切调理西冷牛排1片 <span class="text-s">536 </span></li>
+                                <li>2.西冷牛排 <span class="text-s">223 </span></li>
+                                <li>3.炭烤风味牛排 <span class="text-d">211 </span></li>
+                                <li>4.臻选西冷牛排 <span class="text-d">179 </span></li>
+                                <li>5.生牛肉饼 <span class="text-d">157 </span></li>
+                                <li>6.生整切肋眼牛排 <span class="text-d">137 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="36">
+                                <li>1.照烧鸡肉炒饭 <span class="text-s">952 </span></li>
+                                <li>2.匈牙利风情牛肉焗饭 <span class="text-s">218 </span></li>
+                                <li>3.香滋滋牛肉饭 <span class="text-d">192 </span></li>
+                                <li>4.炙烤西冷牛排铁锅饭 <span class="text-d">127 </span></li>
+                                <li>5.葡式咖喱鸡肉饭外送 <span class="text-d">58 </span></li>
+                                <li>6.烤海鲈鱼海鲜铁锅饭 <span class="text-d">16 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="37">
+                                <li>1.流心提拉米苏 <span class="text-s">444 </span></li>
+                                <li>2.冰淇淋单球 <span class="text-s">264 </span></li>
+                                <li>3.精研抹茶雪域 <span class="text-d">189 </span></li>
+                                <li>4.冰淇淋双球 <span class="text-d">86 </span></li>
+                                <li>5.必胜DuangDuang兔 <span class="text-d">84 </span></li>
+                                <li>6.一只躺赢的小熊 <span class="text-d">76 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="38">
+                                <li>1.法式吐司1片 <span class="text-s">117 </span></li>
+                                <li>2.吞拿鱼帕尼尼70G <span class="text-s">105 </span></li>
+                                <li>3.熏鸡肉炒蛋帕尼尼 <span class="text-d">65 </span></li>
+                                <li>4.皮蛋瘦肉粥 <span class="text-d">56 </span></li>
+                                <li>5.新奥尔良鸡肉卷饼 <span class="text-d">42 </span></li>
+                                <li>6.香荤煎饺(4只) <span class="text-d">40 </span></li>
+                            </ul>
+
+                            <!-- 12 -->
+                            <ul class="huatiPM " id="41">
+                                <li>1.蜜制酱烤香骨鸡3只装 <span class="text-s">926 </span></li>
+                                <li>2.必胜椒盐香香鸡中 <span class="text-s">509 </span></li>
+                                <li>3.波纹薯条 <span class="text-d">504 </span></li>
+                                <li>4.三芝芝士挞 <span class="text-d">348 </span></li>
+                                <li>5.外送浓情烤翅2只 <span class="text-d">336 </span></li>
+                                <li>6.香草凤尾虾3只装 <span class="text-d">335 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="42">
+                                <li>1.普拍超级至尊 <span class="text-s">209 </span></li>
+                                <li>2.普拍薯角培根 <span class="text-s">203 </span></li>
+                                <li>3.普铁薯角培根比萨 <span class="text-d">184 </span></li>
+                                <li>4.普铁肉多多比萨 <span class="text-d">167 </span></li>
+                                <li>5.普铁榴莲菠菠比萨 <span class="text-d">160 </span></li>
+                                <li>6.普拍肉多多比萨 <span class="text-d">152 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="43">
+                                <li>1.大红袍手打柠檬冰大杯 <span class="text-s">432 </span></li>
+                                <li>2.卡曼橘暴打柠檬冰中 <span class="text-s">352 </span></li>
+                                <li>3.百事可乐/杯 <span class="text-d">321 </span></li>
+                                <li>4.百事可乐大杯 <span class="text-d">318 </span></li>
+                                <li>5.大红袍手打柠檬冷 <span class="text-d">255 </span></li>
+                                <li>6.清雅卡曼橘茶(温) <span class="text-d">235 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="44">
+                                <li>1.经典意式肉酱面 <span class="text-s">787 </span></li>
+                                <li>2.经典意式肉酱面外带 <span class="text-s">592 </span></li>
+                                <li>3.生经典意式肉酱面 <span class="text-d">160 </span></li>
+                                <li>4.超级飞侠意式肉酱面 <span class="text-d">128 </span></li>
+                                <li>5.麻酱鸡丝意面 <span class="text-d">93 </span></li>
+                                <li>6.那不勒斯式肉丸面 <span class="text-d">89 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="45">
+                                <li>1.整切调理西冷牛排1片 <span class="text-s">745 </span></li>
+                                <li>2.炭烤风味牛排 <span class="text-s">236 </span></li>
+                                <li>3.生整切肋眼牛排 <span class="text-d">200 </span></li>
+                                <li>4.生牛肉饼 <span class="text-d">199 </span></li>
+                                <li>5.西冷牛排 <span class="text-d">176 </span></li>
+                                <li>6.臻选西冷牛排 <span class="text-d">122 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="46">
+                                <li>1.照烧鸡肉炒饭 <span class="text-s">1079 </span></li>
+                                <li>2.匈牙利风情牛肉焗饭 <span class="text-s">307 </span></li>
+                                <li>3.香滋滋牛肉饭 <span class="text-d">208 </span></li>
+                                <li>4.炙烤西冷牛排铁锅饭 <span class="text-d">154 </span></li>
+                                <li>5.葡式咖喱鸡肉饭外送 <span class="text-d">128 </span></li>
+                                <li>6.烤海鲈鱼海鲜铁锅饭 <span class="text-d">7 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="47">
+                                <li>1.流心提拉米苏 <span class="text-s">406 </span></li>
+                                <li>2.冰淇淋单球 <span class="text-s">178 </span></li>
+                                <li>3.精研抹茶雪域 <span class="text-d">158 </span></li>
+                                <li>4.必胜DuangDuang兔 <span class="text-d">100 </span></li>
+                                <li>5.一只躺赢的小熊 <span class="text-d">72 </span></li>
+                                <li>6.冰淇淋双球 <span class="text-d">63 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="48">
+                                <li>1.鸡茸蘑菇汤 <span class="text-s">362 </span></li>
+                                <li>2.酥皮奶油蛤蜊汤 <span class="text-s">43 </span></li>
+                                <li>3.牛肉罗宋汤 <span class="text-d">18 </span></li>
+                                <li>4.意式香浓菜汤 <span class="text-d">2 </span></li>
+                            </ul>
+
+                            <!-- 3 -->
+                            <ul class="huatiPM " id="51">
+                                <li>1.蜜制酱烤香骨鸡3只装 <span class="text-s">909 </span></li>
+                                <li>2.浓情香鸡翼4只 <span class="text-s">479 </span></li>
+                                <li>3.波纹薯条 <span class="text-d">373 </span></li>
+                                <li>4.蜜制酱烤香骨鸡5只装 <span class="text-d">372 </span></li>
+                                <li>5.必胜椒盐香香鸡中 <span class="text-d">366 </span></li>
+                                <li>6.香草凤尾虾-3只-外 <span class="text-d">359 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="52">
+                                <li>1.普铁薯角培根比萨 <span class="text-s">220 </span></li>
+                                <li>2.普拍薯角培根 <span class="text-s">201 </span></li>
+                                <li>3.普拍榴莲菠菠比萨 <span class="text-d">190 </span></li>
+                                <li>4.普铁超级至尊 <span class="text-d">182 </span></li>
+                                <li>5.普铁榴莲菠菠比萨 <span class="text-d">172 </span></li>
+                                <li>6.普拍超级至尊 <span class="text-d">161 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="53">
+                                <li>1.大红袍手打柠檬冷 <span class="text-s">444 </span></li>
+                                <li>2.大红袍手打柠檬冰大杯 <span class="text-s">406 </span></li>
+                                <li>3.卡曼橘暴打柠檬冰中 <span class="text-d">360 </span></li>
+                                <li>4.清雅卡曼橘茶(冰) <span class="text-d">352 </span></li>
+                                <li>5.百事可乐/杯 <span class="text-d">298 </span></li>
+                                <li>6.清雅卡曼橘茶(温) <span class="text-d">224 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="54">
+                                <li>1.经典意式肉酱面 <span class="text-s">797 </span></li>
+                                <li>2.经典意式肉酱面外带 <span class="text-s">647 </span></li>
+                                <li>3.生经典意式肉酱面 <span class="text-d">172 </span></li>
+                                <li>4.超级飞侠意式肉酱面 <span class="text-d">143 </span></li>
+                                <li>5.麻酱鸡丝意面 <span class="text-d">137 </span></li>
+                                <li>6.川香鸡丝意面 <span class="text-d">97 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="55">
+                                <li>1.整切调理西冷牛排1片 <span class="text-s">592 </span></li>
+                                <li>2.生牛肉饼 <span class="text-s">248 </span></li>
+                                <li>3.西冷牛排 <span class="text-d">239 </span></li>
+                                <li>4.炭烤风味牛排 <span class="text-d">237 </span></li>
+                                <li>5.臻选西冷牛排 <span class="text-d">224 </span></li>
+                                <li>6.生整切肋眼牛排 <span class="text-d">193 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="56">
+                                <li>1.照烧鸡肉炒饭 <span class="text-s">857 </span></li>
+                                <li>2.匈牙利风情牛肉焗饭 <span class="text-s">278 </span></li>
+                                <li>3.香滋滋牛肉饭 <span class="text-d">188 </span></li>
+                                <li>4.炙烤西冷牛排铁锅饭 <span class="text-d">178 </span></li>
+                                <li>5.葡式咖喱鸡肉饭外送 <span class="text-d">119 </span></li>
+                                <li>6.烤海鲈鱼海鲜铁锅饭 <span class="text-d">27 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="57">
+                                <li>1.流心提拉米苏<span class="text-s">439 </span></li>
+                                <li>2.冰淇淋单球<span class="text-s">219 </span></li>
+                                <li>3.精研抹茶雪域<span class="text-d">171 </span></li>
+                                <li>4.经典芝士蛋糕<span class="text-d">89 </span></li>
+                                <li>5.必胜DuangDuang兔<span class="text-d">83 </span></li>
+                                <li>6.冰淇淋双球<span class="text-d">74 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="58">
+                                <li>1.鸡茸蘑菇汤 <span class="text-s">430 </span></li>
+                                <li>2.酥皮奶油蛤蜊汤 <span class="text-s">67 </span></li>
+                                <li>3.牛肉罗宋汤 <span class="text-d">30 </span></li>
+                                <li>4.酥皮鸡茸蘑菇汤C <span class="text-d">4 </span></li>
+                                <li>5.意式香浓菜汤 <span class="text-d">4 </span></li>
+                            </ul>
+
+                            <!-- 35 -->
+                            <ul class="huatiPM " id="61">
+                                <li>1.蜜制酱烤香骨鸡3只装 <span class="text-s">632 </span></li>
+                                <li>2.蜜制酱烤香骨鸡5只装 <span class="text-s">457 </span></li>
+                                <li>3.波纹薯条 <span class="text-d">405 </span></li>
+                                <li>4.必胜椒盐香香鸡中 <span class="text-d">336 </span></li>
+                                <li>5.三芝芝士挞 <span class="text-d">320 </span></li>
+                                <li>6.香草凤尾虾-5只 <span class="text-d">316 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="62">
+                                <li>1.普拍薯角培根 <span class="text-s">188 </span></li>
+                                <li>2.普拍超级至尊 <span class="text-s">182 </span></li>
+                                <li>3.普铁超级至尊 <span class="text-d">168 </span></li>
+                                <li>4.普铁榴莲菠菠比萨 <span class="text-d">141 </span></li>
+                                <li>5.普拍榴莲菠菠比萨 <span class="text-d">122 </span></li>
+                                <li>6.普铁金枕榴莲菠菠 <span class="text-d">118 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="63">
+                                <li>1.大红袍手打柠檬冰大杯 <span class="text-s">387 </span></li>
+                                <li>2.卡曼橘暴打柠檬冰中 <span class="text-s">286 </span></li>
+                                <li>3.阳光橙橙中杯 <span class="text-d">272 </span></li>
+                                <li>4.大红袍手打柠檬冷 <span class="text-d">265 </span></li>
+                                <li>5.超级飞侠橙汁饮料 <span class="text-d">216 </span></li>
+                                <li>6.百事可乐/杯 <span class="text-d">177 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="64">
+                                <li>1.经典意式肉酱面 <span class="text-s">1054 </span></li>
+                                <li>2.经典意式肉酱面外带 <span class="text-s">451 </span></li>
+                                <li>3.超级飞侠意式肉酱面 <span class="text-d">316 </span></li>
+                                <li>4.麻酱鸡丝意面 <span class="text-d">118 </span></li>
+                                <li>5.生经典意式肉酱面 <span class="text-d">103 </span></li>
+                                <li>6.奶油芝士鸡肉培根意面 <span class="text-d">74 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="65">
+                                <li>1.炭烤风味牛排 <span class="text-s">291 </span></li>
+                                <li>2.臻选西冷牛排 <span class="text-s">232 </span></li>
+                                <li>3.整切调理西冷牛排1片 <span class="text-d">226 </span></li>
+                                <li>4.西冷牛排 <span class="text-d">218 </span></li>
+                                <li>5.生整切肋眼牛排 <span class="text-d">105 </span></li>
+                                <li>6.招牌肋眼牛排 <span class="text-d">95 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="66">
+                                <li>1.流心提拉米苏 <span class="text-s">483 </span></li>
+                                <li>2.冰淇淋单球 <span class="text-s">394 </span></li>
+                                <li>3.精研抹茶雪域 <span class="text-d">220 </span></li>
+                                <li>4.冰淇淋双球 <span class="text-d">94 </span></li>
+                                <li>5.必胜DuangDuang兔 <span class="text-d">50 </span></li>
+                                <li>6.一只躺赢的小熊 <span class="text-d">46 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="67">
+                                <li>1.照烧鸡肉炒饭 <span class="text-s">591 </span></li>
+                                <li>2.匈牙利风情牛肉焗饭 <span class="text-s">201 </span></li>
+                                <li>3.香滋滋牛肉饭 <span class="text-d">152 </span></li>
+                                <li>4.炙烤西冷牛排铁锅饭 <span class="text-d">143 </span></li>
+                                <li>5.葡式咖喱鸡肉饭外送 <span class="text-d">23 </span></li>
+                                <li>6.黄金六两松板肉炒饭 <span class="text-d">16 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="68">
+                                <li>1.超级飞侠果蔬沙拉 <span class="text-s">309 </span></li>
+                                <li>2.绚丽水果沙拉 <span class="text-s">174 </span></li>
+                                <li>3.美式凯撒沙拉 <span class="text-d">41 </span></li>
+                                <li>4.美式经典土豆沙拉 <span class="text-d">36 </span></li>
+                                <li>5.烤虾羽衣能量碗T2 <span class="text-d">20 </span></li>
+                                <li>6.炙烤西冷能量碗整合版 <span class="text-d">13 </span></li>
+                            </ul>
+
+                            <!-- 33 -->
+                            <ul class="huatiPM " id="71">
+                                <li>1.蜜制酱烤香骨鸡3只装 <span class="text-s">649 </span></li>
+                                <li>2.波纹薯条 <span class="text-s">413 </span></li>
+                                <li>3.必胜椒盐香香鸡中 <span class="text-d">302 </span></li>
+                                <li>4.金枕榴莲芝士挞 <span class="text-d">240 </span></li>
+                                <li>5.蜜制酱烤香骨鸡5只装 <span class="text-d">231 </span></li>
+                                <li>6.香草凤尾虾3只装 <span class="text-d">221 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="72">
+                                <li>1.普铁超级至尊 <span class="text-s">223 </span></li>
+                                <li>2.普拍超级至尊 <span class="text-s">156 </span></li>
+                                <li>3.普拍薯角培根 <span class="text-d">145 </span></li>
+                                <li>4.普拍榴莲菠菠比萨 <span class="text-d">143 </span></li>
+                                <li>5.小铁超级至尊 <span class="text-d">114 </span></li>
+                                <li>6.小铁夏威夷风情比萨 <span class="text-d">113 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="73">
+                                <li>1.拿铁咖啡(热) <span class="text-s">336 </span></li>
+                                <li>2.大红袍手打柠檬冰大杯 <span class="text-s">300 </span></li>
+                                <li>3.大红袍手打柠檬冷 <span class="text-d">226 </span></li>
+                                <li>4.百事可乐/杯 <span class="text-d">214 </span></li>
+                                <li>5.清雅卡曼橘茶(温) <span class="text-d">212 </span></li>
+                                <li>6.卡曼橘暴打柠檬冰中 <span class="text-d">173 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="74">
+                                <li>1.经典意式肉酱面 <span class="text-s">932 </span></li>
+                                <li>2.经典意式肉酱面外带 <span class="text-s">381 </span></li>
+                                <li>3.超级飞侠意式肉酱面 <span class="text-d">190 </span></li>
+                                <li>4.生经典意式肉酱面 <span class="text-d">131 </span></li>
+                                <li>5.麻酱鸡丝意面 <span class="text-d">119 </span></li>
+                                <li>6.奶香黑椒鸡肉面 <span class="text-d">60 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="75">
+                                <li>1.整切调理西冷牛排1片 <span class="text-s">501 </span></li>
+                                <li>2.炭烤风味牛排 <span class="text-s">202 </span></li>
+                                <li>3.西冷牛排 <span class="text-d">185 </span></li>
+                                <li>4.生整切肋眼牛排 <span class="text-d">162 </span></li>
+                                <li>5.生牛肉饼 <span class="text-d">143 </span></li>
+                                <li>6.臻选西冷牛排 <span class="text-d">143 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="76">
+                                <li>1.流心提拉米苏 <span class="text-s">386 </span></li>
+                                <li>2.冰淇淋单球 <span class="text-s">278 </span></li>
+                                <li>3.精研抹茶雪域 <span class="text-d">194 </span></li>
+                                <li>4.冰淇淋双球 <span class="text-d">110 </span></li>
+                                <li>5.必胜DuangDuang兔 <span class="text-d">73 </span></li>
+                                <li>6.一只躺赢的小熊 <span class="text-d">49 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="77">
+                                <li>1.照烧鸡肉炒饭 <span class="text-s">758 </span></li>
+                                <li>2.匈牙利风情牛肉焗饭 <span class="text-s">165 </span></li>
+                                <li>3.炙烤西冷牛排铁锅饭 <span class="text-d">133 </span></li>
+                                <li>4.香滋滋牛肉饭 <span class="text-d">117 </span></li>
+                                <li>5.葡式咖喱鸡肉饭外送 <span class="text-d">40 </span></li>
+                                <li>6.烤海鲈鱼海鲜铁锅饭 <span class="text-d">15 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="78">
+                                <li>1.法式吐司1片 <span class="text-s">195 </span></li>
+                                <li>2.香荤煎饺(4只) <span class="text-s">86 </span></li>
+                                <li>3.新奥尔良鸡肉卷饼 <span class="text-d">82 </span></li>
+                                <li>4.炒蛋/一个 <span class="text-d">72 </span></li>
+                                <li>5.吞拿鱼帕尼尼70G <span class="text-d">60 </span></li>
+                                <li>6.熏鸡肉炒蛋帕尼尼 <span class="text-d">52 </span></li>
+                            </ul>
+
+                            <!-- 22 -->
+                            <ul class="huatiPM " id="81">
+                                <li>1.蜜制酱烤香骨鸡3只装 <span class="text-s">557 </span></li>
+                                <li>2.香草凤尾虾-3只-外 <span class="text-s">290 </span></li>
+                                <li>3.波纹薯条 <span class="text-d">272 </span></li>
+                                <li>4.必胜椒盐香香鸡中 <span class="text-d">202 </span></li>
+                                <li>5.香草凤尾虾3只装 <span class="text-d">195 </span></li>
+                                <li>6.蜜制酱烤香骨鸡5只装 <span class="text-d">193 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="82">
+                                <li>1.普拍榴莲菠菠比萨 <span class="text-s">148 </span></li>
+                                <li>2.普拍超级至尊 <span class="text-s">129 </span></li>
+                                <li>3.普拍薯角培根 <span class="text-d">111 </span></li>
+                                <li>4.普铁超级至尊 <span class="text-d">94 </span></li>
+                                <li>5.小铁夏威夷风情比萨 <span class="text-d">83 </span></li>
+                                <li>6.普铁薯角培根比萨 <span class="text-d">82 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="83">
+                                <li>1.大红袍手打柠檬冰大杯 <span class="text-s">261 </span></li>
+                                <li>2.卡曼橘暴打柠檬冰中 <span class="text-s">177 </span></li>
+                                <li>3.大红袍手打柠檬冷 <span class="text-d">154 </span></li>
+                                <li>4.清雅卡曼橘茶(温) <span class="text-d">149 </span></li>
+                                <li>5.百事可乐/杯 <span class="text-d">145 </span></li>
+                                <li>6.百事可乐大杯 <span class="text-d">145 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="84">
+                                <li>1.经典意式肉酱面 <span class="text-s">521 </span></li>
+                                <li>2.经典意式肉酱面外带 <span class="text-s">325 </span></li>
+                                <li>3.生经典意式肉酱面 <span class="text-d">92 </span></li>
+                                <li>4.超级飞侠意式肉酱面 <span class="text-d">85 </span></li>
+                                <li>5.麻酱鸡丝意面 <span class="text-d">65 </span></li>
+                                <li>6.香辣鸡丝意面 <span class="text-d">53 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="85">
+                                <li>1.整切调理西冷牛排1片 <span class="text-s">293 </span></li>
+                                <li>2.生牛肉饼 <span class="text-s">150 </span></li>
+                                <li>3.炭烤风味牛排 <span class="text-d">121 </span></li>
+                                <li>4.西冷牛排 <span class="text-d">120 </span></li>
+                                <li>5.生整切肋眼牛排 <span class="text-d">110 </span></li>
+                                <li>6.臻选西冷牛排 <span class="text-d">108 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="86">
+                                <li>1照烧鸡肉炒饭 <span class="text-s">449 </span></li>
+                                <li>2匈牙利风情牛肉焗饭 <span class="text-s">109 </span></li>
+                                <li>3香滋滋牛肉饭 <span class="text-d">96 </span></li>
+                                <li>4炙烤西冷牛排铁锅饭 <span class="text-d">72 </span></li>
+                                <li>5葡式咖喱鸡肉饭外送 <span class="text-d">36 </span></li>
+                                <li>6烤海鲈鱼海鲜铁锅饭 <span class="text-d">7 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="87">
+                                <li>1.流心提拉米苏 <span class="text-s">263 </span></li>
+                                <li>2.冰淇淋单球 <span class="text-s">137 </span></li>
+                                <li>3.精研抹茶雪域 <span class="text-d">98 </span></li>
+                                <li>4.冰淇淋双球 <span class="text-d">61 </span></li>
+                                <li>5.经典芝士蛋糕 <span class="text-d">32 </span></li>
+                                <li>6.必胜DuangDuang兔 <span class="text-d">28 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="88">
+                                <li>1.绚丽水果沙拉 <span class="text-s">103 </span></li>
+                                <li>2.超级飞侠果蔬沙拉 <span class="text-s">85 </span></li>
+                                <li>3.美式凯撒沙拉 <span class="text-d">33 </span></li>
+                                <li>4.小份美式凯撒沙拉 <span class="text-d">22 </span></li>
+                                <li>5.美式经典土豆沙拉 <span class="text-d">17 </span></li>
+                                <li>6.小份水果特 <span class="text-d">10 </span></li>
+                            </ul>
+
+                            <!-- 28 -->
+                            <ul class="huatiPM " id="91">
+                                <li>1.蜜制酱烤香骨鸡3只装 <span class="text-s">500 </span></li>
+                                <li>2.波纹薯条 <span class="text-s">227 </span></li>
+                                <li>3.蜜制酱烤香骨鸡5只装 <span class="text-d">216 </span></li>
+                                <li>4.必胜椒盐香香鸡中 <span class="text-d">188 </span></li>
+                                <li>5.飞侠薯条 <span class="text-d">154 </span></li>
+                                <li>6.三芝芝士挞 <span class="text-d">143 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="92">
+                                <li>1.大红袍手打柠檬冰大杯 <span class="text-s">244 </span></li>
+                                <li>2.百事可乐/杯 <span class="text-s">163 </span></li>
+                                <li>3.卡曼橘暴打柠檬冰中 <span class="text-d">152 </span></li>
+                                <li>4.大红袍手打柠檬冷 <span class="text-d">152 </span></li>
+                                <li>5.清雅卡曼橘茶(温) <span class="text-d">129 </span></li>
+                                <li>6.百事可乐大杯 <span class="text-d">114 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="93">
+                                <li>1.普拍超级至尊 <span class="text-s">89 </span></li>
+                                <li>2.普拍金枕榴莲 <span class="text-s">81 </span></li>
+                                <li>3.普铁超级至尊 <span class="text-d">76 </span></li>
+                                <li>4.普拍薯角培根 <span class="text-d">74 </span></li>
+                                <li>5.普铁薯角培根比萨 <span class="text-d">69 </span></li>
+                                <li>6.普拍榴莲菠菠比萨 <span class="text-d">68 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="94">
+                                <li>1.经典意式肉酱面 <span class="text-s">559 </span></li>
+                                <li>2.经典意式肉酱面外带 <span class="text-s">263 </span></li>
+                                <li>3.超级飞侠意式肉酱面 <span class="text-d">153 </span></li>
+                                <li>4.生经典意式肉酱面 <span class="text-d">132 </span></li>
+                                <li>5.麻酱鸡丝意面 <span class="text-d">84 </span></li>
+                                <li>6.奶油菌菇鸡肉培根面 <span class="text-d">58 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="95">
+                                <li>1.整切调理西冷牛排1片 <span class="text-s">387 </span></li>
+                                <li>2.生整切肋眼牛排 <span class="text-s">150 </span></li>
+                                <li>3.炭烤风味牛排 <span class="text-d">127 </span></li>
+                                <li>4.生牛肉饼 <span class="text-d">114 </span></li>
+                                <li>5.西冷牛排 <span class="text-d">98 </span></li>
+                                <li>6.臻选西冷牛排 <span class="text-d">94 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="96">
+                                <li>1.照烧鸡肉炒饭 <span class="text-s">594 </span></li>
+                                <li>2.香滋滋牛肉饭 <span class="text-s">108 </span></li>
+                                <li>3.匈牙利风情牛肉焗饭 <span class="text-d">102 </span></li>
+                                <li>4.葡式咖喱鸡肉饭外送 <span class="text-d">78 </span></li>
+                                <li>5.炙烤西冷牛排铁锅饭 <span class="text-d">63 </span></li>
+                                <li>6.葡式咖喱鸡肉饭S1 <span class="text-d">14 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="97">
+                                <li>1.流心提拉米苏 <span class="text-s">247 </span></li>
+                                <li>2.冰淇淋单球 <span class="text-s">205 </span></li>
+                                <li>3.精研抹茶雪域 <span class="text-d">72 </span></li>
+                                <li>4.一只躺赢的小熊 <span class="text-d">71 </span></li>
+                                <li>5.必胜DuangDuang兔 <span class="text-d">63 </span></li>
+                                <li>6.冰淇淋双球 <span class="text-d">43 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="98">
+                                <li>1.超级飞侠果蔬沙拉 <span class="text-s">154 </span></li>
+                                <li>2.绚丽水果沙拉 <span class="text-s">58 </span></li>
+                                <li>3.美式经典土豆沙拉 <span class="text-d">38 </span></li>
+                                <li>4.美式凯撒沙拉 <span class="text-d">16 </span></li>
+                                <li>5.炙烤西冷能量碗整合版 <span class="text-d">11 </span></li>
+                                <li>6.烤虾羽衣能量碗T2 <span class="text-d">11 </span></li>
+                            </ul>
+
+                            <!-- 13 -->
+                            <ul class="huatiPM " id="101">
+                                <li>1.蜜制酱烤香骨鸡3只装 <span class="text-s">409 </span></li>
+                                <li>2.必胜椒盐香香鸡中 <span class="text-s">203 </span></li>
+                                <li>3.金枕榴莲芝士挞 <span class="text-d">165 </span></li>
+                                <li>4.香草凤尾虾3只装 <span class="text-d">156 </span></li>
+                                <li>5.三芝芝士挞 <span class="text-d">148 </span></li>
+                                <li>6.波纹薯条 <span class="text-d">130 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="102">
+                                <li>1.普拍薯角培根 <span class="text-s">113 </span></li>
+                                <li>2.普铁薯角培根比萨 <span class="text-s">90 </span></li>
+                                <li>3.普铁超级至尊 <span class="text-d">64 </span></li>
+                                <li>4.普拍超级至尊 <span class="text-d">58 </span></li>
+                                <li>5.普铁意式肉酱 <span class="text-d">55 </span></li>
+                                <li>6.普拍金枕榴莲菠菠 <span class="text-d">54 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="103">
+                                <li>1.百事可乐/杯 <span class="text-s">200 </span></li>
+                                <li>2.百事可乐大杯 <span class="text-s">167 </span></li>
+                                <li>3.大红袍手打柠檬冰大杯 <span class="text-d">149 </span></li>
+                                <li>4.卡曼橘暴打柠檬冰中 <span class="text-d">123 </span></li>
+                                <li>5.清雅卡曼橘茶(冰) <span class="text-d">98 </span></li>
+                                <li>6.大红袍手打柠檬冷 <span class="text-d">92 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="104">
+                                <li>1.经典意式肉酱面 <span class="text-s">249 </span></li>
+                                <li>2.经典意式肉酱面外带 <span class="text-s">182 </span></li>
+                                <li>3.麻酱鸡丝意面 <span class="text-d">67 </span></li>
+                                <li>4.生经典意式肉酱面 <span class="text-d">59 </span></li>
+                                <li>5.香辣鸡丝意面 <span class="text-d">46 </span></li>
+                                <li>6.超级飞侠意式肉酱面 <span class="text-d">38 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="105">
+                                <li>1.整切调理西冷牛排1片 <span class="text-s">251 </span></li>
+                                <li>2.炭烤风味牛排 <span class="text-s">95 </span></li>
+                                <li>3.生牛肉饼 <span class="text-d">67 </span></li>
+                                <li>4.生整切肋眼牛排 <span class="text-d">46 </span></li>
+                                <li>5.西冷牛排 <span class="text-d">44 </span></li>
+                                <li>6.臻选西冷牛排 <span class="text-d">43 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="106">
+                                <li>1.照烧鸡肉炒饭 <span class="text-s">500 </span></li>
+                                <li>2.匈牙利风情牛肉焗饭 <span class="text-s">125 </span></li>
+                                <li>3.香滋滋牛肉饭 <span class="text-d">67 </span></li>
+                                <li>4.炙烤西冷牛排铁锅饭 <span class="text-d">32 </span></li>
+                                <li>5.葡式咖喱鸡肉饭外送 <span class="text-d">16 </span></li>
+                                <li>6.烤海鲈鱼海鲜铁锅饭 <span class="text-d">3 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="107">
+                                <li>1.流心提拉米苏 <span class="text-s">205 </span></li>
+                                <li>2.精研抹茶雪域 <span class="text-s">122 </span></li>
+                                <li>3.冰淇淋单球 <span class="text-d">73 </span></li>
+                                <li>4.必胜DuangDuang兔 <span class="text-d">65 </span></li>
+                                <li>5.冰淇淋双球 <span class="text-d">27 </span></li>
+                                <li>6.经典芝士蛋糕 <span class="text-d">24 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="108">
+                                <li>1.鸡茸蘑菇汤 <span class="text-s">96 </span></li>
+                                <li>2.酥皮奶油蛤蜊汤 <span class="text-s">16 </span></li>
+                                <li>3.牛肉罗宋汤 <span class="text-d">13 </span></li>
+
+                            </ul>
+
+                            <!-- 18 -->
+                            <ul class="huatiPM " id="111">
+                                <li>1.蜜制酱烤香骨鸡3只装 <span class="text-s">283 </span></li>
+                                <li>2.波纹薯条 <span class="text-s">231 </span></li>
+                                <li>3.蜜制酱烤香骨鸡5只装 <span class="text-d">167 </span></li>
+                                <li>4.必胜椒盐香香鸡中 <span class="text-d">160 </span></li>
+                                <li>5.浓情香鸡翼4只 <span class="text-d">131 </span></li>
+                                <li>6.香草凤尾虾-5只 <span class="text-d">103 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="112">
+                                <li>1.百事可乐/杯 <span class="text-s">234 </span></li>
+                                <li>2.大红袍手打柠檬冰大杯 <span class="text-s">206 </span></li>
+                                <li>3.百事可乐大杯 <span class="text-d">183 </span></li>
+                                <li>4.清雅卡曼橘茶(冰) <span class="text-d">154 </span></li>
+                                <li>5.大红袍手打柠檬冷 <span class="text-d">145 </span></li>
+                                <li>6.清雅卡曼橘茶(温) <span class="text-d">119 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="113">
+                                <li>1.普拍超级至尊 <span class="text-s">84 </span></li>
+                                <li>2.普铁超级至尊 <span class="text-s">74 </span></li>
+                                <li>3.普拍薯角培根 <span class="text-d">70 </span></li>
+                                <li>4.普拍肉多多比萨 <span class="text-d">70 </span></li>
+                                <li>5.小铁夏威夷风情比萨 <span class="text-d">53 </span></li>
+                                <li>6.普拍鸡米花比萨 <span class="text-d">50 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="114">
+                                <li>1.整切调理西冷牛排1片 <span class="text-s">1138 </span></li>
+                                <li>2.生整切肋眼牛排 <span class="text-s">315 </span></li>
+                                <li>3.生牛肉饼 <span class="text-d">130 </span></li>
+                                <li>4.生惠灵顿牛排特 <span class="text-d">101 </span></li>
+                                <li>5.炭烤风味牛排 <span class="text-d">81 </span></li>
+                                <li>6.臻选西冷牛排 <span class="text-d">74 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="115">
+                                <li>1.经典意式肉酱面 <span class="text-s">403 </span></li>
+                                <li>2.生经典意式肉酱面 <span class="text-s">216 </span></li>
+                                <li>3.经典意式肉酱面外带 <span class="text-d">174 </span></li>
+                                <li>4.超级飞侠意式肉酱面 <span class="text-d">70 </span></li>
+                                <li>5.麻酱鸡丝意面 <span class="text-d">64 </span></li>
+                                <li>6.奶香黑椒鸡肉面 <span class="text-d">63 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="116">
+                                <li>1.照烧鸡肉炒饭 <span class="text-s">565 </span></li>
+                                <li>2.匈牙利风情牛肉焗饭 <span class="text-s">110 </span></li>
+                                <li>3.香滋滋牛肉饭 <span class="text-d">108 </span></li>
+                                <li>4.葡式咖喱鸡肉饭外送 <span class="text-d">106 </span></li>
+                                <li>5.炙烤西冷牛排铁锅饭 <span class="text-d">77 </span></li>
+                                <li>6.烤海鲈鱼海鲜铁锅饭 <span class="text-d">6 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="117">
+                                <li>1.流心提拉米苏 <span class="text-s">163 </span></li>
+                                <li>2.冰淇淋单球 <span class="text-s">120 </span></li>
+                                <li>3.精研抹茶雪域 <span class="text-d">108 </span></li>
+                                <li>4.必胜DuangDuang兔 <span class="text-d">45 </span></li>
+                                <li>5.冰淇淋双球 <span class="text-d">42 </span></li>
+                                <li>6.一只躺赢的小熊 <span class="text-d">30 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="118">
+                                <li>1.吞拿鱼帕尼尼70G <span class="text-s">98 </span></li>
+                                <li>2.熏鸡肉炒蛋帕尼尼 <span class="text-s">70 </span></li>
+                                <li>3.法式吐司1片 <span class="text-d">70 </span></li>
+                                <li>4.皮蛋瘦肉粥 <span class="text-d">59 </span></li>
+                                <li>5.新奥尔良鸡肉卷饼 <span class="text-d">46 </span></li>
+                                <li>6.香荤煎饺(4只) <span class="text-d">26 </span></li>
+                            </ul>
+
+                            <!-- 10 -->
+                            <ul class="huatiPM " id="121">
+                                <li>1.熏鸡肉滑蛋帕尼尼 <span class="text-s">134 </span></li>
+                                <li>2.熏鸡肉炒蛋帕尼尼 <span class="text-s">106 </span></li>
+                                <li>3.香荤煎饺(4只) <span class="text-d">100 </span></li>
+                                <li>4.新奥尔良鸡肉卷饼 <span class="text-d">96 </span></li>
+                                <li>5.吞拿鱼帕尼尼70G <span class="text-d">65 </span></li>
+                                <li>6.培根煎蛋三明治 <span class="text-d">58 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="122">
+                                <li>1.大红袍手打柠檬冰大杯 <span class="text-s">432 </span></li>
+                                <li>2.卡曼橘暴打柠檬冰中 <span class="text-s">352 </span></li>
+                                <li>3.百事可乐/杯 <span class="text-d">321 </span></li>
+                                <li>4.百事可乐大杯 <span class="text-d">318 </span></li>
+                                <li>5.大红袍手打柠檬冷 <span class="text-d">255 </span></li>
+                                <li>6.清雅卡曼橘茶(温) <span class="text-d">235 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="123">
+                                <li>1.原味豆浆(热) <span class="text-s">225 </span></li>
+                                <li>2.原味豆浆(冰) <span class="text-s">60 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="124">
+                                <li>1.蜜制酱烤香骨鸡3只装 <span class="text-s">926 </span></li>
+                                <li>2.必胜椒盐香香鸡中 <span class="text-s">509 </span></li>
+                                <li>3.波纹薯条 <span class="text-d">504 </span></li>
+                                <li>4.三芝芝士挞 <span class="text-d">348 </span></li>
+                                <li>5.外送浓情烤翅2只 <span class="text-d">336 </span></li>
+                                <li>6.香草凤尾虾3只装 <span class="text-d">335 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="125">
+                                <li>1.小份沙拉 <span class="text-s">154 </span></li>
+                                <li>2.早餐水果杯 <span class="text-s">112 </span></li>
+                                <li>3.早餐酸奶杯 <span class="text-d">44 </span></li>
+                                <li>4.现炒缤纷蔬菜 <span class="text-d">20 </span></li>
+                                <li>5.肉肉爆汁肠 <span class="text-d">16 </span></li>
+                                <li>6.奶香滑蛋 <span class="text-d">13 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="126">
+                                <li>1.普拍超级至尊 <span class="text-s">209 </span></li>
+                                <li>2.普拍薯角培根 <span class="text-s">203 </span></li>
+                                <li>3.普铁薯角培根比萨 <span class="text-d">184 </span></li>
+                                <li>4.普铁肉多多比萨 <span class="text-d">167 </span></li>
+                                <li>5.普铁榴莲菠菠比萨 <span class="text-d">160 </span></li>
+                                <li>6.普拍肉多多比萨 <span class="text-d">152 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="127">
+                                <li>1.整切调理西冷牛排1片 <span class="text-s">745 </span></li>
+                                <li>2.炭烤风味牛排 <span class="text-s">236 </span></li>
+                                <li>3.生整切肋眼牛排 <span class="text-d">200 </span></li>
+                                <li>4.生牛肉饼 <span class="text-d">199 </span></li>
+                                <li>5.西冷牛排 <span class="text-d">176 </span></li>
+                                <li>6.臻选西冷牛排 <span class="text-d">122 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="128">
+                                <li>1.经典意式肉酱面 <span class="text-s">787 </span></li>
+                                <li>2.经典意式肉酱面外带 <span class="text-s">592 </span></li>
+                                <li>3.生经典意式肉酱面 <span class="text-d">160 </span></li>
+                                <li>4.超级飞侠意式肉酱面 <span class="text-d">128 </span></li>
+                                <li>5.麻酱鸡丝意面 <span class="text-d">93 </span></li>
+                                <li>6.那不勒斯式肉丸面 <span class="text-d">89 </span></li>
+                            </ul>
+
+                            <!-- 23 -->
+                            <ul class="huatiPM " id="131">
+                                <li>1.蜜制酱烤香骨鸡3只装 <span class="text-s">1366 </span></li>
+                                <li>2.必胜椒盐香香鸡中 <span class="text-s">411 </span></li>
+                                <li>3.必胜孜然香香鸡中 <span class="text-d">329 </span></li>
+                                <li>4.波纹薯条 <span class="text-d">243 </span></li>
+                                <li>5.奶香芝士菠萝卷 <span class="text-d">172 </span></li>
+                                <li>6.蜜制酱烤香骨鸡5只装 <span class="text-d">169 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="132">
+                                <li>1.清雅卡曼橘茶(冰) <span class="text-s">457 </span></li>
+                                <li>2.卡曼橘暴打柠檬冰中 <span class="text-s">427 </span></li>
+                                <li>3.大红袍手打柠檬冷 <span class="text-d">265 </span></li>
+                                <li>4.清雅卡曼橘茶(温) <span class="text-d">264 </span></li>
+                                <li>5.大红袍手打柠檬冰大杯 <span class="text-d">261 </span></li>
+                                <li>6.百事可乐/杯 <span class="text-d">205 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="133">
+                                <li>1.普铁烤肠派对比萨 <span class="text-s">251 </span></li>
+                                <li>2.普铁意式肉酱 <span class="text-s">178 </span></li>
+                                <li>3.普铁美式精选比萨 <span class="text-d">163 </span></li>
+                                <li>4.普铁鸡米花比萨 <span class="text-d">161 </span></li>
+                                <li>5.普铁榴莲菠菠比萨 <span class="text-d">130 </span></li>
+                                <li>6.普铁芝士多多 <span class="text-d">112 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="134">
+                                <li>1.臻选西冷牛排 <span class="text-s">553 </span></li>
+                                <li>2.整切调理西冷牛排1片 <span class="text-s">387 </span></li>
+                                <li>3.西冷牛排 <span class="text-d">339 </span></li>
+                                <li>4.招牌肋眼牛排 <span class="text-d">333 </span></li>
+                                <li>5.生牛肉饼 <span class="text-d">179 </span></li>
+                                <li>6.肋眼牛排 <span class="text-d">160 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="135">
+                                <li>1.经典意式肉酱面 <span class="text-s">931 </span></li>
+                                <li>2.经典意式肉酱面外带 <span class="text-s">254 </span></li>
+                                <li>3.铁锅肉酱千层面 <span class="text-d">151 </span></li>
+                                <li>4.生经典意式肉酱面 <span class="text-d">100 </span></li>
+                                <li>5.奶油芝士鸡肉培根意面 <span class="text-d">100 </span></li>
+                                <li>6.超级飞侠意式肉酱面 <span class="text-d">81 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="136">
+                                <li>1.照烧鸡肉炒饭 <span class="text-s">648 </span></li>
+                                <li>2.匈牙利风情牛肉焗饭 <span class="text-s">283 </span></li>
+                                <li>3.香滋滋牛肉饭 <span class="text-d">255 </span></li>
+                                <li>4.葡式咖喱鸡肉饭外送 <span class="text-d">79 </span></li>
+                                <li>5.炙烤西冷牛排铁锅饭 <span class="text-d">73 </span></li>
+                                <li>6.烤海鲈鱼海鲜铁锅饭 <span class="text-d">30 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="137">
+                                <li>1.流心提拉米苏 <span class="text-s">303 </span></li>
+                                <li>2.必胜DuangDuang兔 <span class="text-s">157 </span></li>
+                                <li>3.冰淇淋单球 <span class="text-d">145 </span></li>
+                                <li>4.精研抹茶雪域 <span class="text-d">103 </span></li>
+                                <li>5.一只躺赢的小熊 <span class="text-d">90 </span></li>
+                                <li>6.冰淇淋双球 <span class="text-d">51 </span></li>
+                            </ul>
+                            <ul class="huatiPM " id="138">
+                                <li>1.鸡茸蘑菇汤 <span class="text-s">400 </span></li>
+                                <li>2.酥皮奶油蛤蜊汤 <span class="text-s">69 </span></li>
+                                <li>3.牛肉罗宋汤 <span class="text-d">24 </span></li>
+                                <li>4.意式香浓菜汤 <span class="text-d">1 </span></li>
+                            </ul>
+                        
+                        </div>
+                    </div>
+
+                    <div style="height: 200px; float: left; width: 60%">
+
+                        <!-- <div class="text-b tit02" style="text-align: center;">关键词 — 云</div> -->
+                        <div class="tagcloud" id="44">
+                            <!-- b大小 co颜色 -->
+                            <p class="b07 co01"  onclick="showtopContent('1')">小食</p>
+                            <p class="b06 co02"  onclick="showtopContent('2')">披萨</p>
+                            <p class="b05 co03"  onclick="showtopContent('3')">牛肉类产品</p>
+                            <p class="b04 co04"  onclick="showtopContent('4')">饮料</p>
+                            <p class="b03 co05"  onclick="showtopContent('5')">意面</p>
+                            <p class="b02 co06"  onclick="showtopContent('6')">甜品</p>
+                            <p class="b08 co07"  onclick="showtopContent('7')">米饭</p>
+                            <p class="b01 co08"  onclick="showtopContent('8')">肉排</p>
+                        </div>
+                        <div class="tagcloud" id="21">
+                            <p class="b07 co01"  onclick="showtopContent('11')">小食</p>
+                            <p class="b06 co02"  onclick="showtopContent('12')">披萨</p>
+                            <p class="b05 co03"  onclick="showtopContent('13')">饮料</p>
+                            <p class="b04 co04"  onclick="showtopContent('14')">意面</p>
+                            <p class="b03 co05"  onclick="showtopContent('15')">牛肉类产品</p>
+                            <p class="b02 co06"  onclick="showtopContent('16')">米饭</p>
+                            <p class="b08 co07"  onclick="showtopContent('17')">甜品</p>
+                            <p class="b01 co08"  onclick="showtopContent('18')">汤</p>
+                        </div>
+                        <div class="tagcloud" id="26">
+                            <p class="b07 co01"  onclick="showtopContent('21')">披萨</p>
+                            <p class="b06 co02"  onclick="showtopContent('22')">小食</p>
+                            <p class="b05 co03"  onclick="showtopContent('23')">饮料</p>
+                            <p class="b04 co04"  onclick="showtopContent('24')">牛肉类产品</p>
+                            <p class="b03 co05"  onclick="showtopContent('25')">意面</p>
+                            <p class="b02 co06"  onclick="showtopContent('26')">米饭</p>
+                            <p class="b08 co07"  onclick="showtopContent('27')">甜品</p>
+                            <p class="b01 co08"  onclick="showtopContent('28')">汤</p>
+                        </div>
+                        <div class="tagcloud" id="25">
+                            <p class="b07 co01"  onclick="showtopContent('31')">小食</p>
+                            <p class="b06 co02"  onclick="showtopContent('32')">饮料</p>
+                            <p class="b05 co03"  onclick="showtopContent('33')">披萨</p>
+                            <p class="b04 co04"  onclick="showtopContent('34')">意面</p>
+                            <p class="b03 co05"  onclick="showtopContent('35')">牛肉类产品</p>
+                            <p class="b02 co06"  onclick="showtopContent('36')">米饭</p>
+                            <p class="b08 co07"  onclick="showtopContent('37')">甜品</p>
+                            <p class="b01 co08"  onclick="showtopContent('38')">早餐主食</p>
+                        </div>
+                        <div class="tagcloud" id="12">
+                            <p class="b07 co01"  onclick="showtopContent('41')">小食</p>
+                            <p class="b06 co02"  onclick="showtopContent('42')">披萨</p>
+                            <p class="b05 co03"  onclick="showtopContent('43')">饮料</p>
+                            <p class="b04 co04"  onclick="showtopContent('44')">意面</p>
+                            <p class="b03 co05"  onclick="showtopContent('45')">牛肉类产品</p>
+                            <p class="b02 co06"  onclick="showtopContent('46')">米饭</p>
+                            <p class="b08 co07"  onclick="showtopContent('47')">甜品</p>
+                            <p class="b01 co08"  onclick="showtopContent('48')">早餐主食</p>
+                        </div>
+                        <div class="tagcloud" id="3">
+                            <p class="b07 co01"  onclick="showtopContent('51')">小食</p>
+                            <p class="b06 co02"  onclick="showtopContent('52')">披萨</p>
+                            <p class="b05 co03"  onclick="showtopContent('53')">饮料</p>
+                            <p class="b04 co04"  onclick="showtopContent('54')">意面</p>
+                            <p class="b03 co05"  onclick="showtopContent('55')">牛肉类产品</p>
+                            <p class="b02 co06"  onclick="showtopContent('56')">米饭</p>
+                            <p class="b08 co07"  onclick="showtopContent('57')">甜品</p>
+                            <p class="b01 co08"  onclick="showtopContent('58')">汤</p>
+                        </div>
+                        <div class="tagcloud" id="35">
+                            <p class="b07 co01"  onclick="showtopContent('61')">小食</p>
+                            <p class="b06 co02"  onclick="showtopContent('62')">披萨</p>
+                            <p class="b05 co03"  onclick="showtopContent('63')">饮料</p>
+                            <p class="b04 co04"  onclick="showtopContent('64')">意面</p>
+                            <p class="b03 co05"  onclick="showtopContent('65')">牛肉类产品</p>
+                            <p class="b02 co06"  onclick="showtopContent('66')">甜品</p>
+                            <p class="b08 co07"  onclick="showtopContent('67')">米饭</p>
+                            <p class="b01 co08"  onclick="showtopContent('68')">沙拉</p>
+                        </div>
+                        <div class="tagcloud" id="33">
+                            <p class="b07 co01"  onclick="showtopContent('71')">小食</p>
+                            <p class="b06 co02"  onclick="showtopContent('72')">披萨</p>
+                            <p class="b05 co03"  onclick="showtopContent('73')">饮料</p>
+                            <p class="b04 co04"  onclick="showtopContent('74')">意面</p>
+                            <p class="b03 co05"  onclick="showtopContent('75')">牛肉类产品</p>
+                            <p class="b02 co06"  onclick="showtopContent('76')">甜品</p>
+                            <p class="b08 co07"  onclick="showtopContent('77')">米饭</p>
+                            <p class="b01 co08"  onclick="showtopContent('78')">早餐主食</p>
+                        </div>
+                        <div class="tagcloud" id="22">
+                            <p class="b07 co01"  onclick="showtopContent('81')">小食</p>
+                            <p class="b06 co02"  onclick="showtopContent('82')">披萨</p>
+                            <p class="b05 co03"  onclick="showtopContent('83')">饮料</p>
+                            <p class="b04 co04"  onclick="showtopContent('84')">意面</p>
+                            <p class="b03 co05"  onclick="showtopContent('85')">牛肉类产品</p>
+                            <p class="b02 co06"  onclick="showtopContent('86')">米饭</p>
+                            <p class="b08 co07"  onclick="showtopContent('87')">甜品</p>
+                            <p class="b01 co08"  onclick="showtopContent('88')">沙拉</p>
+                        </div>
+                        <div class="tagcloud" id="28">
+                            <p class="b07 co01"  onclick="showtopContent('91')">小食</p>
+                            <p class="b06 co02"  onclick="showtopContent('92')">饮料</p>
+                            <p class="b05 co03"  onclick="showtopContent('93')">披萨</p>
+                            <p class="b04 co04"  onclick="showtopContent('94')">意面</p>
+                            <p class="b03 co05"  onclick="showtopContent('95')">牛肉类产品</p>
+                            <p class="b02 co06"  onclick="showtopContent('96')">米饭</p>
+                            <p class="b08 co07"  onclick="showtopContent('97')">甜品</p>
+                            <p class="b01 co08"  onclick="showtopContent('98')">沙拉</p>
+                        </div>
+                        <div class="tagcloud" id="13">
+                            <p class="b07 co01"  onclick="showtopContent('101')">小食</p>
+                            <p class="b06 co02"  onclick="showtopContent('102')">披萨</p>
+                            <p class="b05 co03"  onclick="showtopContent('103')">饮料</p>
+                            <p class="b04 co04"  onclick="showtopContent('104')">意面</p>
+                            <p class="b03 co05"  onclick="showtopContent('105')">牛肉类产品</p>
+                            <p class="b02 co06"  onclick="showtopContent('106')">米饭</p>
+                            <p class="b08 co07"  onclick="showtopContent('107')">甜品</p>
+                            <p class="b01 co08"  onclick="showtopContent('108')">汤</p>
+                        </div>
+                        <div class="tagcloud" id="18">
+                            <p class="b07 co01"  onclick="showtopContent('111')">小食</p>
+                            <p class="b06 co02"  onclick="showtopContent('112')">饮料</p>
+                            <p class="b05 co03"  onclick="showtopContent('113')">披萨</p>
+                            <p class="b04 co04"  onclick="showtopContent('114')">牛肉类产品</p>
+                            <p class="b03 co05"  onclick="showtopContent('115')">意面</p>
+                            <p class="b02 co06"  onclick="showtopContent('116')">米饭</p>
+                            <p class="b08 co07"  onclick="showtopContent('117')">甜品</p>
+                            <p class="b01 co08"  onclick="showtopContent('118')">早餐主食</p>
+                        </div>
+                        <div class="tagcloud" id="10">
+                            <p class="b07 co01"  onclick="showtopContent('121')">早餐主食</p>
+                            <p class="b06 co02"  onclick="showtopContent('122')">饮料</p>
+                            <p class="b05 co03"  onclick="showtopContent('123')">早餐饮料</p>
+                            <p class="b04 co04"  onclick="showtopContent('124')">小食</p>
+                            <p class="b03 co05"  onclick="showtopContent('125')">早餐小食</p>
+                            <p class="b02 co06"  onclick="showtopContent('126')">披萨</p>
+                            <p class="b08 co07"  onclick="showtopContent('127')">牛肉类产品</p>
+                            <p class="b01 co08"  onclick="showtopContent('128')">意面</p>
+                        </div>
+                        <div class="tagcloud" id="23">
+                            <p class="b07 co01"  onclick="showtopContent('131')">小食</p>
+                            <p class="b06 co02"  onclick="showtopContent('132')">饮料</p>
+                            <p class="b05 co03"  onclick="showtopContent('133')">披萨</p>
+                            <p class="b04 co04"  onclick="showtopContent('134')">牛肉类产品</p>
+                            <p class="b03 co05"  onclick="showtopContent('135')">意面</p>
+                            <p class="b02 co06"  onclick="showtopContent('136')">米饭</p>
+                            <p class="b08 co07"  onclick="showtopContent('137')">甜品</p>
+                            <p class="b01 co08"  onclick="showtopContent('138')">汤</p>
+                        </div>
+
+                        <script type="text/javascript">
+                            /*3D标签云*/
+                            tagcloud({
+                                selector: ".tagcloud",  //元素选择器
+                                fontsize: 8,       //基本字体大小, 单位px
+                                radius: 60,         //滚动半径, 单位px 页面宽度和高度的五分之一
+                                mspeed: "slow",   //滚动最大速度, 取值: slow, normal(默认), fast
+                                ispeed: "slow",   //滚动初速度, 取值: slow, normal(默认), fast
+                                direction: 0,     //初始滚动方向, 取值角度(顺时针360): 0对应top, 90对应left, 135对应right-bottom(默认)...
+                                keep: false          //鼠标移出组件后是否继续随鼠标滚动, 取值: false, true(默认) 对应 减速至初速度滚动, 随鼠标滚动
+                            });
+                            
+                        </script>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- 右------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+    <div class="columnSmall">
+        <!-- 右一-------------------------------------------------------------------------------------------------------------------------------------------- -->
+        <div class="order panel">
+            <div class="inner">
+                <img src="images/14.png" alt="">
+
+
+
+                <div class="box" id="">
+                    <div style="float: left; width: 85%; height: 255px; margin-top: -20px;" id="fb02"></div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+        <!-- 销售额 -->
+        <!-- 右二------------------------------------------------------------------------------------------------------------------------------------- -->
+        <div class="order panel">
+            <div class="inner">
+                <img src="images/12.png" alt="">
+                <div class="box" id="">
+                    <div style="float: left; width: 100%; height: 255px; margin-top: -20px;" id="fb03"></div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- 排行榜 -->
+        <!-- 右三------------------------------------------------------------------------------------------------------------------------------------------------ -->
+        <div class="order panel">
+            <div class="inner">
+                <img src="images/13.png" alt="" >
+                <ul class="topic" id="44">
+                    <span style="display: block; scale: 120%; margin: 25px 20px;"><img src="images/card/44.png" alt=""></span>
+                </ul>
+                <ul class="topic" id="21">
+                    <span style="display: block; scale: 120%; margin: 25px 20px;"><img src="images/card/21.png" alt=""></span>
+                </ul>
+                <ul class="topic" id="26">
+                    <span style="display: block; scale: 120%; margin: 25px 20px;"><img src="images/card/26.png" alt=""></span>
+                </ul>
+                <ul class="topic" id="25">
+                    <span style="display: block; scale: 120%; margin: 25px 20px;"><img src="images/card/25.png" alt=""></span>
+                </ul>
+                <ul class="topic" id="12">
+                    <span style="display: block; scale: 120%; margin: 25px 20px;"><img src="images/card/12.png" alt=""></span>
+                </ul>
+                <ul class="topic" id="3">
+                    <span style="display: block; scale: 120%; margin: 25px 20px;"><img src="images/card/3.png" alt=""></span>
+                </ul>
+                <ul class="topic" id="35">
+                    <span style="display: block; scale: 120%; margin: 25px 20px;"><img src="images/card/35.png" alt=""></span>
+                </ul>
+                <ul class="topic" id="33">
+                    <span style="display: block; scale: 120%; margin: 25px 20px;"><img src="images/card/33.png" alt=""></span>
+                </ul>
+                <ul class="topic" id="22">
+                    <span style="display: block; scale: 120%; margin: 25px 20px;"><img src="images/card/22.png" alt=""></span>
+                </ul>
+                <ul class="topic" id="28">
+                    <span style="display: block; scale: 120%; margin: 25px 20px;"><img src="images/card/28.png" alt=""></span>
+                </ul>
+                <ul class="topic" id="13">
+                    <span style="display: block; scale: 120%; margin: 25px 20px;"><img src="images/card/13.png" alt=""></span>
+                </ul>
+                <ul class="topic" id="18">
+                    <span style="display: block; scale: 120%; margin: 25px 20px;"><img src="images/card/18.png" alt=""></span>
+                </ul>
+                <ul class="topic" id="10">
+                    <span style="display: block; scale: 120%; margin: 25px 20px;"><img src="images/card/10.png" alt=""></span>
+                </ul>
+                <ul class="topic" id="23">
+                    <span style="display: block; scale: 120%; margin: 25px 20px;"><img src="images/card/23.png" alt=""></span>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+</body>
+
+
+<script src="./js/china.js"></script>
+<script src="./js/mymap.js"></script>
+<script>
+    function show(param1) {
+        showContent(param1);
+        showmap(param1);
+    }
+</script>
+
+</html>
